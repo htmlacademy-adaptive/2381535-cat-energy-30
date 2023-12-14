@@ -1,8 +1,7 @@
 {
-  "name": "cat-energy-30",
+  "name": "htmlacademy-gulp-template",
   "version": "1.0.0",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "type": "module",
   "engines": {
     "node": "^18.18 || ^20.9"
@@ -15,18 +14,22 @@
     "not < 0.2%"
   ],
   "scripts": {
+    "prepare": "husky install",
     "start": "gulp runDev",
     "build": "gulp buildProd",
-    "preview": "npm run build && browser-sync start -s build/ --cors --no-notify --no-ui",
+    "preview": "pnpm build && browser-sync start -s build/ --cors --no-notify --no-ui",
     "prelint": "gulp processMarkup --silent",
-    "lint": "npm-run-all -pc lint:**",
-    "lint:spaces": "editorconfig-cli",
+    "lint": "pnpm --color /^lint:/",
+    "lint:spaces": "ec --exclude 'vendor/*'",
     "lint:markup": "cd build && html-validator --quiet",
     "lint:html": "linthtml build/**/*.html --config .linthtmlrc",
     "lint:bem": "gulp lintBem --silent",
     "lint:styles": "stylelint \"source/styles/**/*.scss\"",
-    "lint:scripts": "eslint . --ignore-path .gitignore",
-    "optimize": "npm-run-all -p optimize:**",
+    "lint:scripts": "eslint . --ignore-path .gitignore --ignore-pattern 'vendor/**'",
+    "fix": "pnpm /^fix:/",
+    "fix:styles": "stylelint \"source/styles/**/*.scss\" --fix",
+    "fix:scripts": "eslint . --ignore-path .gitignore --ignore-pattern 'vendor/**' --fix",
+    "optimize": "pnpm /^optimize:/",
     "optimize:raster": "gulp optimizeRaster",
     "optimize:vector": "gulp optimizeVector"
   },
@@ -49,14 +52,15 @@
     "gulp-sharp-responsive": "0.4.1",
     "gulp-stacksvg": "3.0.0",
     "gulp-svgmin": "4.1.0",
-    "linthtml-config-htmlacademy": "1.0.13",
+    "husky": "^8.0.3",
+    "linthtml-config-htmlacademy": "1.0.14",
     "npm-run-all": "4.1.5",
     "postcss": "8.4.32",
     "postcss-csso": "6.0.1",
     "postcss-url": "10.1.3",
     "sass": "1.69.5",
-    "stylelint": "15.11.0",
-    "stylelint-config-htmlacademy": "2.0.6",
+    "stylelint": "16.0.2",
+    "stylelint-config-htmlacademy": "3.0.2",
     "w3c-html-validator": "1.6.1"
   }
 }
