@@ -1,13 +1,146 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>CAT ENERGY</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <!-- logo -->
+    <a class="main-header__logo logo" href="index.html" aria-label="Логотип CAT ENERGY">
+      <svg class="logo__image" width="33" height="38"></svg>
+      <svg class="logo__text" width="101" height="18"></svg>
+    </a>
+    <!-- burger button -->
+    <button class="main-header__button" type="button">
+      <span class="visually-hidden">Меню</span>
+    </button>
+    <!-- navigation -->
+    <nav class="main-header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html" aria-current="page">главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">каталог продукции</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main">
+    <h1 class="visually-hidden">Кэт энерджи</h1>
+    <!-- promo -->
+    <section class="promo">
+      <h2 class="promo__title">Функциональное<br> питание для котов</h2>
+      <p class="promo__text">Занялся собой? Займись котом!</p>
+      <img class="promo__image" src="#" width="280" height="270" alt="Питание для котов">
+      <a class="promo__link" href="form.html">подобрать программу</a>
+    </section>
+    <!-- diet -->
+    <section class="diet">
+      <h2 class="visually-hidden">Режимы диет</h2>
+      <div class="diet__item diet__item--icon_sit">
+        <h3 class="diet__title">похудение</h3>
+        <p class="diet__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <a class="diet__link" href="#">каталог slim</a>
+      </div>
+      <div class="diet__item diet__item--icon_stand">
+        <h3 class="diet__title">Набор массы</h3>
+        <p class="diet__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+        <a class="diet__link" href="#">каталог pro</a>
+      </div>
+    </section>
+    <!-- advantages -->
+    <section class="advantages">
+      <h2 class="advantages__title">Как это работает</h2>
+      <ol class="advantages__list">
+        <li class="advantages__item advantages__item--icon_leaf">Функциональное питание содержит только полезные питательные вещества.</li>
+        <li class="advantages__item advantages__item--icon_powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+        <li class="advantages__item advantages__item--icon_cutlery">Замените один-два приема обычной еды на наше функциональное питание.</li>
+        <li class="advantages__item advantages__item--icon_alarm">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+      </ol>
+    </section>
+    <!-- living example -->
+    <section class="living-example">
+      <h2 class="living-example__title">Живой пример</h2>
+      <p class="living-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+      <dl class="living-example__list example-time">
+        <div class="living-example__item">
+          <dt class="example-time__text">снижение веса</dt>
+          <dd class="example-time__value">5 КГ</dd>
+        </div>
+        <div class="living-example__item">
+          <dt class="example-time__text">затрачено времени</dt>
+          <dd class="example-time__value">60 ДНЕЙ</dd>
+        </div>
+        <div class="living-example__price example-price">
+          <dt class="example-price__text">Затраты на питание:</dt>
+          <dd class="example-price__value">15 000 РУБ.</dd>
+        </div>
+      </dl>
+
+      <div class="slider"></div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <!-- contacts -->
+    <div class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="contacts__text">приглашаем<br> к сотрудничеству<br> дилеров!</p>
+      <div class="contacts__address-wraapper">
+        <span class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8</span>
+        <span class="contacts__city">Санкт-Петербург</span>
+      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.31107014046!2d30.321194899368496!3d59.939211597945246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1702937869485!5m2!1sru!2sru" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- footer navigation -->
+    <div class="footer-wrapper">
+      <!-- logo -->
+      <a class="logo" href="#">
+        <span class="visually-hidden">Логотип кэт енерджи</span>
+        <svg class="logo__text" width="101" height="18"></svg>
+      </a>
+      <!-- social -->
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link--icon_vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--icon_youtube" href="#">
+            <span class="visually-hidden">ЮТуб</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--icon_telegram" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+      </ul>
+      <!-- copyright -->
+      <a class="copyright" href="#">
+        <span class="copyright__name">HTML Academy</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34">
+          <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
