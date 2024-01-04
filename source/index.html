@@ -46,8 +46,9 @@
       <h2 class="promo__title">Функциональное<br> питание для котов</h2>
       <p class="promo__text">Занялся собой? Займись котом!</p>
       <picture>
-        <img class="promo__image" src="#" width="280" height="270" alt="Питание для котов">
-        <img src="" alt="">
+        <source type="image/png" media="(min-width: 1440px)" srcset="images/index-promo-desktop@1x.png 1x, images/index-promo-desktop@2x.png 2x" width="552" height="499">
+        <source type="image/png" media="(min-width: 768px)" srcset="images/index-promo-tablet@1x.png 1x, images/index-promo-tablet@2x.png 2x" width="709" height="609">
+        <img class="promo__image" src="images/index-promo-mobile@1x.png" srcset="images/index-promo-mobile@2x.png 2x" width="280" height="270" alt="Питание для котов">
       </picture>
       <a class="promo__link" href="form.html">подобрать программу</a>
     </section>
@@ -94,7 +95,16 @@
         </div>
       </dl>
 
-      <div class="slider"></div>
+      <div class="slider">
+        <picture>
+          <source type="image/png" media="(min-width: 768px)" srcset="images/index-slider_before-tablet@1x.png 1x, images/index-slider_before-tablet@2x 2x" width="560" height="512">
+          <img src="images/index-slider_before-mobile@1x.png" srcset="images/index-slider_before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+        </picture>
+        <picture>
+          <source type="image/png" media="(min-width: 768px)" srcset="images/index-slider_after-tablet@1x.png 1x, images/index-slider_after-tablet@2x.png 2x" width="560" height="512">
+          <img src="images/index-slider_after-mobile@1x.png" srcset="images/index-slider_after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+        </picture>
+      </div>
     </section>
   </main>
 
@@ -108,7 +118,11 @@
         <span class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8</span>
         <span class="contacts__city">Санкт-Петербург</span>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.31107014046!2d30.321194899368496!3d59.939211597945246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1702937869485!5m2!1sru!2sru" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <picture>
+        <source type="image/jpg" media="(min-width: 1440px)" srcset="images/footer-map-desktop@1x.jpg 1x, images/footer-map-desktop@2x.jpg 2x" width="1440" height="400">
+        <source type="image/jpg" media="(min-width: 768px)" srcset="images/footer-map-tablet@1x.jpg 1x, images/footer-map-tablet@2x.jpg 2x" width="768" height="400">
+        <img src="images/footer-map-mobile@1x.jpg" srcset="images/footer-map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта проезда">
+      </picture>
     </div>
     <!-- footer navigation -->
     <div class="footer-wrapper">
