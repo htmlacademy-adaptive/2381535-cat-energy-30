@@ -2,6 +2,39 @@
 @import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
+@import "./global/common.scss";
+@import "./global/visually-hidden.scss";
+
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+// header
+@import "./blocks/main-header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/navigation.scss";
+// index
+@import "./blocks/index.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/diet.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/living-example.scss";
+@import "./blocks/example-time.scss";
+@import "./blocks/example-price.scss";
+@import "./blocks/slider.scss";
+// form
+@import "./blocks/.scss";
+
+@import "./blocks/.scss";
+
+@import "./blocks/.scss";
+
+@import "./blocks/.scss";
+
+@import "./blocks/.scss";
+
+@import "./blocks/.scss";
+
+// footer
+@import "./blocks/footer.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
