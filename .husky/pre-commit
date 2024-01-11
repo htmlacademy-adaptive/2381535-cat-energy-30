@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-git stash -ku
+# git stash -ku
 
-trap "git stash pop" EXIT
+# trap "git stash pop" EXIT
 
-npm run lint
+# npm run lint

@@ -7,11 +7,12 @@
 
 
 /* BLOCKS */
-// header
+// ---> header
 @import "./blocks/main-header.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/navigation.scss";
-// index
+
+// ---> index
 @import "./blocks/index.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/diet.scss";
@@ -20,20 +21,21 @@
 @import "./blocks/example-time.scss";
 @import "./blocks/example-price.scss";
 @import "./blocks/slider.scss";
-// form
-@import "./blocks/.scss";
-
-@import "./blocks/.scss";
-
-@import "./blocks/.scss";
-
-@import "./blocks/.scss";
-
-@import "./blocks/.scss";
-
-@import "./blocks/.scss";
-
-// footer
+// ---> form
+@import "./blocks/forms.scss";
+@import "./blocks/form.scss";
+@import "./blocks/cat-data.scss";
+@import "./blocks/data-person.scss";
+@import "./blocks/form-comment.scss";
+@import "./blocks/form-extra.scss";
+// ---> catalog
+@import "./blocks/catalog.scss";
+@import "./blocks/catalog-product.scss";
+@import "./blocks/card.scss";
+@import "./blocks/show-more.scss";
+@import "./blocks/extra.scss";
+@import "./blocks/gift.scss";
+// ---> footer
 @import "./blocks/footer.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/social.scss";
