@@ -3,15 +3,20 @@
 }
 
 .advantages__title {
-
+  color: $color-black;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 .advantages__list {
-
+  list-style: none;
 }
 
 .advantages__item {
-
+  color: $color-dark-gray;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .advantages__item--icon_leaf {

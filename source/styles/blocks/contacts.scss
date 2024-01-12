@@ -1,13 +1,26 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+}
 
+.contacts__wrapper {
+  display: flex;
 }
 
 .contacts__text {
-
+  font-family: "Oswald", sans-serif;
+  color: $color-black;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 
 .contacts__address-wraapper {
-
+  color: $color-dark-gray;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__address {
@@ -20,4 +33,8 @@
 
 .contacts__map {
 
+}
+
+.contacts__wrapper--background {
+  background-color: $color-basic-gray;
 }

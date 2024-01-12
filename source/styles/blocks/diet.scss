@@ -3,19 +3,30 @@
 }
 
 .diet__item {
-
+  background-color: $color-basic-gray;
 }
 
 .diet__title {
-
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $color-black;
 }
 
 .diet__text {
-
+  color: $color-dark-gray;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .diet__link {
-
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  color: $color-black;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
 }
 
 .diet__item--icon_sit {

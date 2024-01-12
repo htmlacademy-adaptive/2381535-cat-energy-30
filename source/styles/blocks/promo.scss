@@ -1,13 +1,25 @@
 .promo {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
 
+.promo__container {
+  background-color: $color-green;
+  color: $color-white;
 }
 
 .promo__title {
-
+  text-align: center;
+  font-size: 36px;
+  line-height: 36px;
 }
 
 .promo__text {
-
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
 }
 
 .promo__image {
@@ -15,5 +27,8 @@
 }
 
 .promo__link {
-
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 44px;
 }

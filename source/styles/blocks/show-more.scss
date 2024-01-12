@@ -3,13 +3,29 @@
 }
 
 .show-more__title {
-
+  font-family: "Oswald", sans-serif;
+  color: $color-black-1;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .show-more__text {
-
+  color: $color-dark-gray;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
 }
 
 .show-more__button {
-
+  font-family: "Oswald", sans-serif;
+  color: $color-dark-gray;
+  background-color: $color-basic-gray;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
 }

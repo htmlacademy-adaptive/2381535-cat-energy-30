@@ -3,9 +3,14 @@
 }
 
 .example-time__text {
-
+  color: $color-dark-gray;
+  font-size: 12px;
+  line-height: 12px;
 }
 
 .example-time__value {
-
+  color: $color-black;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
 }

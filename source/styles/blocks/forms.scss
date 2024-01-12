@@ -3,11 +3,18 @@
 }
 
 .forms__title {
-
+  font-family: "Oswald", sans-serif;
+  color: $color-black;
+  font-size: 36px;
+  line-height: 36px;
 }
 
 .forms__text {
-
+  font-family: "Oswald", sans-serif;
+  color: $color-black;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .forms__data {

@@ -1,9 +1,9 @@
 .navigation {
-
+  background-color: $color-white;
 }
 
 .navigation__list {
-
+  list-style: none;
 }
 
 .navigation__item {
@@ -11,5 +11,10 @@
 }
 
 .navigation__link {
-
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-black;
 }

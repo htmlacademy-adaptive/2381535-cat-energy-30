@@ -3,11 +3,14 @@
 }
 
 .extra__title {
-
+  font-family: "Oswald", sans-serif;
+  color: $color-black;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .extra__list {
-
+  list-style: none;
 }
 
 .extra__item {
@@ -15,15 +18,23 @@
 }
 
 .extra__name {
-
+  font-family: "Oswald", sans-serif;
+  color: $color-black-2;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
 }
 
 .extra__quantity {
-
+  color: $color-dark-gray;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .extra__price {
-
+  color: $color-dark-gray;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .extra__button {

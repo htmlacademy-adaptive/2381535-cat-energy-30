@@ -1,5 +1,6 @@
 .footer {
-
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__contacts {
@@ -7,5 +8,7 @@
 }
 
 .footer__navigation {
-
+  background-color: $color-basic-gray;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,11 +1,15 @@
 .copyright {
-
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
 }
 
 .copyright__name {
-
+  color: $color-dark-gray;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .copyright__logo {
-
+  fill: $color-dark-gray;
 }
