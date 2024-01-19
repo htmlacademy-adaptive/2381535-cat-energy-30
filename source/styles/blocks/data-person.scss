@@ -1,3 +1,26 @@
 .data-person {
   //
 }
+
+.data-person input {
+  padding: 14px 40px 13px 15px;
+  border: 1px  solid $color-special-gray;
+}
+
+.data-person [type="email"] {
+  width: 217px;
+  background-image: url("../../images/icons/stack.svg#email");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 185px 13px;
+  box-sizing: border-box;
+}
+
+.data-person [type="tel"] {
+  width: 200px;
+  background-image: url("../../images/icons/stack.svg#phone");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 167px 13px;
+  box-sizing: border-box;
+}

@@ -1,3 +1,9 @@
 .cat-data {
   //
 }
+
+.cat-data input {
+  padding: 14px 15px 13px;
+  box-sizing: border-box;
+  border: 1px solid $color-special-gray;
+}
