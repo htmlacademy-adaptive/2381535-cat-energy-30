@@ -4,6 +4,9 @@
   line-height: 20px;
   text-transform: uppercase;
   display: flex;
+  justify-content: space-between;
+  width: 188px;
+  margin: 0 auto 20px;
 }
 
 .example-price__text {
@@ -11,5 +14,5 @@
 }
 
 .example-price__value {
-  //
+  margin: 0;
 }

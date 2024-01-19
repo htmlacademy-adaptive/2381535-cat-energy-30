@@ -1,13 +1,20 @@
 .social {
-  //
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 132px;
+  height: 22px;
+  padding: 0;
+  align-self: center;
+  margin: 20px 0;
 }
 
 .social__item {
-  //
+  align-self: center;
 }
 
 .social__link {
-  //
+  display: flex;
 }
 
 .social__link--icon_vk {

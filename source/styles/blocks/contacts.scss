@@ -5,6 +5,8 @@
 
 .contacts__wrapper {
   display: flex;
+  margin: 0;
+  padding: 26px 20px;
 }
 
 .contacts__text {
@@ -13,6 +15,8 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 140px;
+  margin: 0;
 }
 
 .contacts__address-wraapper {
@@ -32,7 +36,7 @@
 }
 
 .contacts__map {
-  //
+  display: block;
 }
 
 .contacts__wrapper--background {

@@ -1,5 +1,7 @@
 .living-example {
   background-color: $color-basic-gray;
+  margin: 0;
+  padding: 25px 20px 40px;
 }
 
 .living-example__title {
@@ -7,16 +9,26 @@
   color: $color-black;
   font-size: 36px;
   line-height: 40px;
+  margin: 0 0 40px;
 }
 
 .living-example__text {
   color: $color-dark-gray;
   font-size: 14px;
   line-height: 18px;
+  margin: 0 0 20px;
 }
 
 .living-example__list {
-  //
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.living-example__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
 }
 
 .living-example__item {

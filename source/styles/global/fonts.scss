@@ -1,3 +1,13 @@
 /* здесь подключите шрифты*/
+@mixin font-face ($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    src: $font-src;
+    font-display: swap;
+  }
+}
+
 @include font-face ("Lato", 400, normal, url("../../fonts/lato/400.woff2") format("woff2"));
 @include font-face ("Oswald", 400, normal, url("../../fonts/oswald/400.woff2") format("woff2"));

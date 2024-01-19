@@ -1,4 +1,43 @@
 .slider {
-  //
+  margin: 0 auto;
+  display: flex;
+  position: relative;
 }
 
+.slider::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 256px;
+  background-color: $color-dark-gray-2;
+  top: 0;
+  left: 138px;
+  border-radius: 2px;
+}
+
+.slider__left {
+  object-fit: cover;
+  object-position: left;
+  width: 140px;
+}
+
+.slider__right {
+  object-position: right;
+  object-fit: cover;
+  width: 140px;
+}
+
+.slider__button {
+  position: absolute;
+  border: none;
+  width: 40px;
+  height: 40px;
+  top: 108px;
+  left: 120px;
+  border-radius: 50%;
+  background-image: url("../../images/icons/stack.svg#button-slider");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-white;
+  order: 1;
+}

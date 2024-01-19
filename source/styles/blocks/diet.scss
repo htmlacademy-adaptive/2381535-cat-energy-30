@@ -1,9 +1,15 @@
 .diet {
-  //
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px;
+  padding: 0 20px;
+  gap: 20px;
 }
 
 .diet__item {
   background-color: $color-basic-gray;
+  position: relative;
+  padding: 30px 33px 18px 20px;
 }
 
 .diet__title {
@@ -12,6 +18,8 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $color-black;
+  margin: 0 0 0 70px;
+  padding: 0;
 }
 
 .diet__text {
@@ -29,10 +37,20 @@
   text-transform: uppercase;
 }
 
+.diet__icon {
+  margin-left: 15px;
+}
+
 .diet__item--icon_sit {
-  //
+  background-image: url("../../images/icons/stack.svg#cat-sitting");
+  background-size: 50px 53px;
+  background-position: 20px 21px;
+  background-repeat: no-repeat;
 }
 
 .diet__item--icon_stand {
-  //
+  background-image: url("../../images/icons/stack.svg#cat-going");
+  background-size: 67px 50px;
+  background-position: 13px 24px;
+  background-repeat: no-repeat;
 }
