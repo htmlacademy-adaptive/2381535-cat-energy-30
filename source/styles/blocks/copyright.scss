@@ -4,6 +4,16 @@
   text-decoration: none;
   align-items: center;
   margin: 20px 0 0;
+
+  &:hover {
+    .copyright__logo {
+      background-color: $color-green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__name {
@@ -13,5 +23,10 @@
 }
 
 .copyright__logo {
-  fill: $color-dark-gray;
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../images/icons/stack.svg#html-academy");
+  background-color: $color-dark-gray-2;
+  mask-position: center;
+  mask-repeat: no-repeat;
 }

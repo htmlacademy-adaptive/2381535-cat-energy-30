@@ -4,10 +4,10 @@
 
 .data-person input {
   padding: 14px 40px 13px 15px;
-  border: 1px  solid $color-special-gray;
+  border: 1px  solid $color-dark-gray;
 }
 
-.data-person [type="email"] {
+.data-person input[type="email"] {
   width: 217px;
   background-image: url("../../images/icons/stack.svg#email");
   background-size: 20px 20px;
@@ -16,7 +16,7 @@
   box-sizing: border-box;
 }
 
-.data-person [type="tel"] {
+.data-person input[type="tel"] {
   width: 200px;
   background-image: url("../../images/icons/stack.svg#phone");
   background-size: 20px 20px;

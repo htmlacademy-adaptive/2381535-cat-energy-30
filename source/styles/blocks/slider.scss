@@ -38,6 +38,13 @@
   background-image: url("../../images/icons/stack.svg#button-slider");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: $color-white;
   order: 1;
+
+  &:hover {
+    //
+  }
+
+  &:active {
+    //
+  }
 }

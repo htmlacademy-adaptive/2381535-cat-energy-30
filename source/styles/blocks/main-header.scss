@@ -12,7 +12,16 @@
   justify-content: space-between;
   align-items: center;
   gap: 56px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
+
 
 .main-header__button {
   width: 24px;
@@ -22,6 +31,14 @@
   background-color: $color-white;
   background-position: center;
   border: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__navigation {

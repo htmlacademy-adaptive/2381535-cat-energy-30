@@ -15,16 +15,32 @@
 
 .social__link {
   display: flex;
+  width: 28px;
+  height: 22px;
+  background-color: $color-dark-gray-2;
+  mask-position: center;
+  mask-repeat: no-repeat;
+
+  &:hover {
+    background-color: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__link--icon_vk {
-  //
+  mask-image: url("../../images/icons/stack.svg#vk");
+  mask-size: 27px 17px;
 }
 
 .social__link--icon_youtube {
-  //
+  mask-image: url("../../images/icons/stack.svg#youtube");
+  mask-size: 24px 19px;
 }
 
 .social__link--icon_telegram {
-  //
+  mask-image: url("../../images/icons/stack.svg#telegram");
+  mask-size: 20px 17px;
 }

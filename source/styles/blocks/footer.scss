@@ -17,11 +17,18 @@
 
 .footer__navigation .logo {
   margin: 0 auto;
-}
-
-.footer__navigation .logo__text {
   width: 128px;
   height: 24px;
-  margin: 0 0 20px;
-  padding: 0;
+  mask-image: url("../../images/icons/logo-cat-energy.svg");
+  background-color: $color-black-1;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  &:hover {
+    background-color: $color-black-3;
+  }
+
+  &:active {
+    background-color: $color-black-6;
+  }
 }
