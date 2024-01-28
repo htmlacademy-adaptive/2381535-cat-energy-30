@@ -4,7 +4,7 @@
   position: relative;
 }
 
-.slider::after {
+.slider::before {
   position: absolute;
   content: "";
   width: 4px;
@@ -41,7 +41,9 @@
   order: 1;
 
   &:hover {
-    //
+    .slider::before {
+      background-color: $color-green;
+    }
   }
 
   &:active {

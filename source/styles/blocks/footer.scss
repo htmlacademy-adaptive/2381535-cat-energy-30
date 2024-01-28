@@ -13,12 +13,25 @@
   flex-direction: column;
   margin: 0;
   padding: 40px 20px;
+  position: relative;
+}
+
+.footer__navigation::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: auto;
+  background-color: $color-special-gray-2;
+  top: 84px;
+  left: 20px;
+  right: 20px;
 }
 
 .footer__navigation .logo {
   margin: 0 auto;
   width: 128px;
   height: 24px;
+  margin-bottom: 20px;
   mask-image: url("../../images/icons/logo-cat-energy.svg");
   background-color: $color-black-1;
   mask-repeat: no-repeat;

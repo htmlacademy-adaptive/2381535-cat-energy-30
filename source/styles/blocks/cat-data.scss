@@ -1,9 +1,36 @@
 .cat-data {
-  //
+  padding: 0 20px 24px;
+  position: relative;
+}
+
+.cat-data::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: $color-special-gray-2;
+  left: 0;
+  bottom: 0;
 }
 
 .cat-data input {
   padding: 14px 15px 13px;
   box-sizing: border-box;
-  border: 1px solid $color-special-gray;
+  width: 100%;
+}
+
+.cat-data .form__name {
+  margin-right: 13px;
+  white-space: nowrap;
+  align-self: center;
+}
+
+.cat-data .form__label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cat-data .form__item:not(:last-child) {
+  margin-bottom: 14px;
 }

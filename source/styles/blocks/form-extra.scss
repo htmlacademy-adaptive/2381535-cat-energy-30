@@ -1,3 +1,16 @@
 .form-extra {
-  //
+  padding: 0  20px;
+  margin-bottom: 34px;
+}
+
+.form-extra .form__title {
+  margin-bottom: 34px;
+}
+
+.form-extra .form__item {
+  height: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
 }

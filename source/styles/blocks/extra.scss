@@ -7,6 +7,21 @@
   color: $color-black;
   font-size: 24px;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+}
+
+.extra__title::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  margin-top: 15px;
+  margin-right: -20px;
+  background-color: $color-green;
 }
 
 .extra__list {

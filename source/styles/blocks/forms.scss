@@ -1,5 +1,17 @@
 .forms {
-  //
+  margin: 0;
+  padding: 27px 0 32px;
+  position: relative;
+}
+
+.forms::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: $color-special-gray-2;
+  top: 0;
+  left: 0;
 }
 
 .forms__title {
@@ -7,6 +19,7 @@
   color: $color-black;
   font-size: 36px;
   line-height: 36px;
+  margin: 0 20px 37px;
 }
 
 .forms__text {
@@ -15,6 +28,8 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  width: 230px;
+  margin: 0 20px 39px;
 }
 
 .forms__data {

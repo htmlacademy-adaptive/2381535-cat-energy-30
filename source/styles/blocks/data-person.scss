@@ -1,26 +1,46 @@
 .data-person {
-  //
+  margin-top: 26px;
+  padding: 0 20px 24px;
+}
+
+.data-person .form__title {
+  margin-bottom: 35px;
+}
+
+.data-person .form__name {
+  margin-right: 13px;
+  white-space: nowrap;
+  align-self: center;
+}
+
+.data-person .form__label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.data-person .form__item:not(:last-child) {
+  margin-bottom: 14px;
 }
 
 .data-person input {
   padding: 14px 40px 13px 15px;
-  border: 1px  solid $color-dark-gray;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .data-person input[type="email"] {
-  width: 217px;
   background-image: url("../../images/icons/stack.svg#email");
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-position: 185px 13px;
+  background-position: top 50% right 12px;
   box-sizing: border-box;
 }
 
 .data-person input[type="tel"] {
-  width: 200px;
   background-image: url("../../images/icons/stack.svg#phone");
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-position: 167px 13px;
+  background-position: top 50% right 12px;
   box-sizing: border-box;
 }
