@@ -41,8 +41,45 @@
   //
 }
 
-.form__label {
-  //
+.form__label:has(input[type="email"]),
+.form__label:has(input[type="tel"]) {
+  position: relative;
+
+  &:focus-within {
+    .form__input {
+      box-shadow: inset $color-dark-gray;
+      outline: none;
+    }
+    --icon-color: #68b738;
+    outline: none;
+  }
+
+  &::after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: "";
+    right: 12px;
+    top: 12px;
+    mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    box-sizing: border-box;
+    background-color: var(--icon-color, $color-black);
+  }
+
+  &:has(input[type="email"]) {
+    &::after {
+      content: "";
+      mask-image: url("../../images/icons/stack.svg#email");
+    }
+  }
+
+  &:has(input[type="tel"]) {
+    &::after {
+      content: "";
+      mask-image: url("../../images/icons/stack.svg#phone");
+    }
+  }
 }
 
 .form__input {
@@ -52,6 +89,7 @@
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid $color-special-gray-3;
+  box-sizing: border-box;
 
   &:hover {
     border: 1px solid $color-special-gray;

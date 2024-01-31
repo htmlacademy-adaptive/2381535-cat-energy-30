@@ -2,17 +2,17 @@
   margin: 0 auto;
   display: flex;
   position: relative;
-}
 
-.slider::before {
-  position: absolute;
-  content: "";
-  width: 4px;
-  height: 256px;
-  background-color: $color-dark-gray-2;
-  top: 0;
-  left: 138px;
-  border-radius: 2px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 256px;
+    background-color: $color-dark-gray-2;
+    top: 0;
+    left: 138px;
+    border-radius: 2px;
+  }
 }
 
 .slider__left {
@@ -29,24 +29,34 @@
 
 .slider__button {
   position: absolute;
-  border: none;
+  content: "";
+  border: 2px solid $color-dark-gray-2;
   width: 40px;
   height: 40px;
   top: 108px;
   left: 120px;
   border-radius: 50%;
-  background-image: url("../../images/icons/stack.svg#button-slider");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: $color-white;
   order: 1;
 
-  &:hover {
-    .slider::before {
-      background-color: $color-green;
-    }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    mask-image: url("../../images/icons/stack.svg#button-slider");
+    mask-repeat: no-repeat;
+    margin-left: -20px;
+    margin-top: -20px;
+    background-color: $color-dark-gray-2;
+    order: 1;
   }
 
-  &:active {
-    //
+  &:hover {
+    border-color: $color-green;
+
+    &:hover::after {
+      background-color: $color-green;
+    }
   }
 }

@@ -7,7 +7,6 @@
   padding: 0;
   align-self: center;
   margin: 20px 0;
-  position: relative;
 }
 
 .social__item {
@@ -15,33 +14,50 @@
 }
 
 .social__link {
-  display: flex;
   width: 28px;
   height: 22px;
+  position: relative;
   background-color: $color-dark-gray-2;
-  mask-position: center;
-  mask-repeat: no-repeat;
 
-  &:hover {
+  &:hover::after {
     background-color: $color-green;
   }
 
-  &:active {
+  &:active::after {
     opacity: 0.3;
+  }
+
+  &:focus-within::after {
+    background-color: $color-green;
+  }
+
+
+  &::after {
+    display: block;
+    content: "";
+    width: 28px;
+    height: 22px;
+    margin-top: -11px;
+    margin-left: -14px;
+    mask-image: var(--icon-url);
+    background-color: $color-dark-gray-2;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: var(--icon-size);
   }
 }
 
 .social__link--icon_vk {
-  mask-image: url("../../images/icons/stack.svg#vk");
-  mask-size: 27px 17px;
+  --icon-url: url("../../images/icons/stack.svg#vk");
+  --icon-size: 27px 17px;
 }
 
 .social__link--icon_youtube {
-  mask-image: url("../../images/icons/stack.svg#youtube");
-  mask-size: 24px 19px;
+  --icon-url: url("../../images/icons/stack.svg#youtube");
+  --icon-size: 24px 19px;
 }
 
 .social__link--icon_telegram {
-  mask-image: url("../../images/icons/stack.svg#telegram");
-  mask-size: 20px 17px;
+  --icon-url: url("../../images/icons/stack.svg#telegram");
+  --icon-size: 20px 17px;
 }

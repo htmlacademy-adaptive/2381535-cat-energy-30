@@ -1,4 +1,18 @@
 .copyright {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: $color-special-gray-2;
+    top: -20px;
+    left: 0;
+  }
+}
+
+.copyright__link {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
@@ -15,16 +29,6 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.copyright::after {
-  position: absolute;
-  content: "";
-  height: 1px;
-  width: 100%;
-  background-color: $color-special-gray-2;
-  top: -20px;
-  left: 0;
 }
 
 .copyright__name {

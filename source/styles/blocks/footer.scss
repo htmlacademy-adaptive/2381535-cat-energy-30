@@ -27,21 +27,18 @@
   right: 20px;
 }
 
-.footer__navigation .logo {
+.footer__logo {
   margin: 0 auto;
   width: 128px;
   height: 24px;
   margin-bottom: 20px;
-  mask-image: url("../../images/icons/logo-cat-energy.svg");
-  background-color: $color-black-1;
-  mask-repeat: no-repeat;
-  mask-position: center;
 
   &:hover {
-    background-color: $color-black-3;
+    opacity: 0.8;
   }
 
   &:active {
-    background-color: $color-black-6;
+    opacity: 0.6;
   }
 }
+

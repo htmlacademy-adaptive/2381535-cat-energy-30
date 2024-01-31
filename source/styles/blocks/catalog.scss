@@ -1,5 +1,13 @@
 .catalog {
-  //
+  position: relative;
+}
+
+.catalog::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: $color-black;
 }
 
 .catalog__title {
@@ -7,6 +15,7 @@
   color: $color-black;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
 }
 
 .catalog__product {
