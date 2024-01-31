@@ -194,7 +194,7 @@
     └── images/
 ```
 
-Векторную графику для спрайта (иконки) складывайте в `raw/images/icons/`.
+Векторную графику для спрайта (иконки) складывайте в `raw/icons/`.
 
 ```shell
 └── raw/
@@ -202,7 +202,7 @@
         └── icons/
 ```
 
-Запуск команды `npm run optimize:vector` поместит оптимизированные копии этих svg-файлов в `source/images/icons/`.
+Запуск команды `npm run optimize:vector` поместит оптимизированные копии этих svg-файлов в `source/icons/`.
 
 ```shell
 └── source/
@@ -210,7 +210,7 @@
         └── icons/
 ```
 
-При сборке автоматизация перенесёт всю графику из `source/images/` в `build/images/`, а из иконок в `source/images/icons/` создаст спрайт `build/images/icons/stack.svg`.
+При сборке автоматизация перенесёт всю графику из `source/images/` в `build/images/`, а из иконок в `source/icons/` создаст спрайт `build/icons/stack.svg`.
 
 ```shell
 └── build/

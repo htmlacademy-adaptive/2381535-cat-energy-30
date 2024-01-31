@@ -65,7 +65,7 @@
 .diet__link::after {
   content: "";
   align-self: center;
-  background-image: url("../../images/icons/stack.svg#arrow");
+  background-image: url("../../icons/stack.svg#arrow");
   background-position: -8px;
   background-repeat: no-repeat;
   width: 32px;
@@ -76,14 +76,14 @@
 }
 
 .diet__item--icon_sit {
-  background-image: url("../../images/icons/stack.svg#cat-sitting");
+  background-image: url("../../icons/stack.svg#cat-sitting");
   background-size: 50px 53px;
   background-position: 20px 21px;
   background-repeat: no-repeat;
 }
 
 .diet__item--icon_stand {
-  background-image: url("../../images/icons/stack.svg#cat-going");
+  background-image: url("../../icons/stack.svg#cat-going");
   background-size: 67px 50px;
   background-position: 13px 24px;
   background-repeat: no-repeat;

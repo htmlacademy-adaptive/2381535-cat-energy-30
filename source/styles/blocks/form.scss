@@ -70,14 +70,14 @@
   &:has(input[type="email"]) {
     &::after {
       content: "";
-      mask-image: url("../../images/icons/stack.svg#email");
+      mask-image: url("../../icons/stack.svg#email");
     }
   }
 
   &:has(input[type="tel"]) {
     &::after {
       content: "";
-      mask-image: url("../../images/icons/stack.svg#phone");
+      mask-image: url("../../icons/stack.svg#phone");
     }
   }
 }
