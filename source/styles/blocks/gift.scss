@@ -2,7 +2,12 @@
   background-color: $color-green;
   color: $color-white;
   text-align: center;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/gift-mobile@1x.jpg");
+  background-image:
+    linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+    url("../../images/gift-mobile@1x.jpg");
   background-size: cover;
   width: 280px;
   height: 290px;

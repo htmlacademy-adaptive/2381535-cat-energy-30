@@ -12,6 +12,7 @@
 .advantages__list {
   list-style: none;
   display: flex;
+  gap: 20px;
   flex-direction: column;
   padding: 0;
 }
@@ -20,70 +21,40 @@
   color: $color-dark-gray;
   font-size: 14px;
   line-height: 18px;
-  position: relative;
-}
+  display: flex;
+  gap: 20px;
 
-.advantages__item:not(:last-child) {
-  margin-bottom: 20px;
+  &--icon_leaf {
+    --icon-shape: url("../../icons/stack.svg#leaf");
+  }
+
+  &--icon_powder {
+    --icon-shape: url("../../icons/stack.svg#powder");
+  }
+
+  &--icon_cutlery {
+    --icon-shape: url("../../icons/stack.svg#cutlery");
+  }
+
+  &--icon_alarm {
+    --icon-shape: url("../../icons/stack.svg#alarm");
+  }
+
+  &::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    display: block;
+    order: -1;
+    background-color: $color-green;
+    background-image: var(--icon-shape);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+  }
 }
 
 .advantages__text {
-  padding: 2px 0 4px 80px;
+  padding: 2px 0;
   display: block;
-}
-
-.advantages__item--icon_leaf::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 60px;
-  top: 0;
-  left: 0;
-  background-image: url("../../icons/stack.svg#leaf");
-  background-position: center;
-  background-size: 25px 28px;
-  background-repeat: no-repeat;
-  background-color: $color-green;
-}
-
-.advantages__item--icon_powder::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 60px;
-  top: 0;
-  left: 0;
-  background-image: url("../../icons/stack.svg#powder");
-  background-position: center;
-  background-size: 26px 27px;
-  background-repeat: no-repeat;
-  background-color: $color-green;
-}
-
-.advantages__item--icon_cutlery::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 60px;
-  top: 0;
-  left: 0;
-  background-image: url("../../icons/stack.svg#cutlery");
-  background-position: center;
-  background-size: 25px 30px;
-  background-repeat: no-repeat;
-  background-color: $color-green;
-}
-
-.advantages__item--icon_alarm::before {
-  position: absolute;
-  content: "";
-  width: 60px;
-  height: 60px;
-  top: 0;
-  left: 0;
-  background-image: url("../../icons/stack.svg#alarm");
-  background-position: center;
-  background-size: 26px 31px;
-  background-repeat: no-repeat;
-  background-color: $color-green;
 }

@@ -55,7 +55,7 @@
   &:hover {
     border-color: $color-green;
 
-    &:hover::after {
+    &::after {
       background-color: $color-green;
     }
   }
