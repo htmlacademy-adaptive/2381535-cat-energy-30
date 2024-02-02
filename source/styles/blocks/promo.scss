@@ -16,12 +16,31 @@
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-mobile@1x.jpg");
   background-size: cover;
   position: relative;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    background-image: none;
+    background-color: $color-white;
+    color: $color-black;
+    padding: 65px 0 21px 90px;
+    margin: 0 auto;
+    width: 708px;
+    height: 266px;
+  }
 }
 
 .promo__title {
   text-align: center;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin: 0 0 40px;
+  }
 }
 
 .promo__text {
@@ -29,11 +48,22 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0;
+  }
 }
 
 .promo__image {
   position: absolute;
   top: 167px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
 
 .promo__link {
@@ -42,4 +72,14 @@
   display: block;
   min-width: 280px;
   margin: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__link {
+    width: 244px;
+    position: absolute;
+    top: 295px;
+    left: 90px;
+    margin: 0;
+  }
 }

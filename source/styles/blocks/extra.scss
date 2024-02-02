@@ -1,5 +1,17 @@
 .extra {
-  //
+  display: flex;
+  flex-direction: column;
+}
+
+.extra__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .extra__title {
@@ -26,6 +38,10 @@
 
 .extra__list {
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+  }
 }
 
 .extra__item {

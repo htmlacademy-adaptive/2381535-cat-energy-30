@@ -14,6 +14,12 @@
   margin: 0;
   padding: 40px 20px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .footer__navigation::after {
@@ -25,6 +31,10 @@
   top: 84px;
   left: 20px;
   right: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .footer__logo {
@@ -39,6 +49,10 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 

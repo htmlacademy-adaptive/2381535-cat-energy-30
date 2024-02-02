@@ -1,6 +1,7 @@
 .cat-data {
   padding: 0 20px 24px;
   position: relative;
+  grid-area: cat-data;
 }
 
 .cat-data::after {

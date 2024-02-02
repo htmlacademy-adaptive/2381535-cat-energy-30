@@ -4,8 +4,29 @@
 
 .catalog-product__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+  }
 }
 
 .catalog-product__item {
-  //
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 430px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }

@@ -4,6 +4,15 @@
   margin: 0 0 20px;
   padding: 0 20px;
   gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+    padding: 0 110px;
+    margin: 0 auto;
+    width: 1440px;
+    box-sizing: border-box;
+  }
 }
 
 .diet__item {
@@ -40,6 +49,10 @@
     left: 20px;
     right: 20px;
     bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
   }
 }
 

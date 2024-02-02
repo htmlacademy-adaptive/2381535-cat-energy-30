@@ -1,6 +1,7 @@
 .data-person {
   margin-top: 26px;
   padding: 0 20px 24px;
+  grid-area: data-person;
 }
 
 .data-person .form__title {
@@ -27,4 +28,15 @@
   padding: 14px 40px 13px 15px;
   width: 100%;
   box-sizing: border-box;
+}
+
+.data-person__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 570px auto;
+    gap: 80px;
+  }
 }

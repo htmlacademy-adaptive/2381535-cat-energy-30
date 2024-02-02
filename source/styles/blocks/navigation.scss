@@ -3,8 +3,24 @@
   background-color: $color-white;
 }
 
+@media (min-width: $tablet-width) {
+  .navigation {
+    display: block;
+  }
+}
+
 .navigation__list {
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .navigation__item {

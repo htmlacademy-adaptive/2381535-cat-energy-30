@@ -15,6 +15,19 @@
   gap: 20px;
   flex-direction: column;
   padding: 0;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap: 37px 133px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+  }
 }
 
 .advantages__item {
@@ -51,6 +64,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40px 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    width: 250px;
   }
 }
 

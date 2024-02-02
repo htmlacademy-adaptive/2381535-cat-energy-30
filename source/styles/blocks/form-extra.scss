@@ -1,6 +1,7 @@
 .form-extra {
   padding: 0  20px;
   margin-bottom: 34px;
+  grid-area: form-extra;
 }
 
 .form-extra .form__title {
@@ -12,5 +13,21 @@
 
   &:not(:last-child) {
     margin-bottom: 13px;
+  }
+}
+
+.form-extra__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 285px 285px 285px 285px;
   }
 }
