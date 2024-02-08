@@ -5,6 +5,11 @@
   padding: 0 20px;
   gap: 20px;
 
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+    padding: 0 30px;
+  }
+
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 80px;
@@ -20,6 +25,8 @@
   position: relative;
   display: flow-root;
   padding: 30px 33px 18px 20px;
+  min-width: 280px;
+  box-sizing: border-box;
 
   &--icon_sit {
     --icon-shape: url("../../icons/stack.svg#cat-sitting");
@@ -38,6 +45,14 @@
     background-image: var(--icon-shape);
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      right: 63px;
+      top: 81px;
+    }
   }
 
   &::after {
@@ -49,6 +64,14 @@
     left: 20px;
     right: 20px;
     bottom: 57px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 53px 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,17 +83,29 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   text-transform: uppercase;
   color: $color-black;
   margin: 0 0 29px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .diet__text {
   color: $color-dark-gray;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .diet__link {
@@ -79,6 +114,7 @@
   color: $color-black;
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   text-transform: uppercase;
   display: inline-flex;
   position: relative;
@@ -103,5 +139,10 @@
     width: 32px;
     height: 12px;
     transition: 0.1s ease-in-out;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

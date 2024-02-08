@@ -4,17 +4,24 @@
   flex-direction: column;
   position: relative;
   margin: 0 0 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    height: 662px;
+    margin: 0 auto;
+  }
 }
 
 .promo__container {
   background-color: $color-green;
   color: $color-white;
-  width: 320px;
+  width: auto;
   height: 302px;
   margin-bottom: 138px;
-  opacity: 85%;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-mobile@1x.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   box-sizing: border-box;
 
@@ -22,10 +29,19 @@
     background-image: none;
     background-color: $color-white;
     color: $color-black;
-    padding: 65px 0 21px 90px;
+    padding: 65px 200px 21px 90px;
+    margin: 0 30px 630px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 110px 100px 0 80px;
     margin: 0 auto;
-    width: 708px;
-    height: 266px;
+    background-image: none;
+    background-color: $color-white;
+    z-index: -2;
+    color: $color-black;
   }
 }
 
@@ -60,9 +76,18 @@
 .promo__image {
   position: absolute;
   top: 167px;
+  translate: 50%;
+  right: 50%;
 
   @media (min-width: $tablet-width) {
-    position: static;
+    position: absolute;
+    top: 266px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 29px;
+    left: 170px;
   }
 }
 
@@ -72,14 +97,18 @@
   display: block;
   min-width: 280px;
   margin: 0 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .promo__link {
-    width: 244px;
+  @media (min-width: $tablet-width) {
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 26px;
     position: absolute;
     top: 295px;
-    left: 90px;
-    margin: 0;
+    margin: 0 0 0 120px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 52px 0 0 80px;
   }
 }

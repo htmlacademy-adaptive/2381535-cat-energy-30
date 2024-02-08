@@ -1,25 +1,30 @@
 .navigation {
   display: none;
   background-color: $color-white;
-}
 
-@media (min-width: $tablet-width) {
-  .navigation {
+  @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
   }
 }
 
 .navigation__list {
   list-style: none;
-}
 
-@media (min-width: $tablet-width) {
-  .navigation__list {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     gap: 33px;
     margin: 0;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: end;
+    background-color: transparent;
   }
 }
 

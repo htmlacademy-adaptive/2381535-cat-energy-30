@@ -19,6 +19,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -56,3 +62,7 @@
   }
 }
 
+.footer__wrapper {
+  width: 100%;
+  background-color: $color-basic-gray;
+}

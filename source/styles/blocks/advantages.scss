@@ -1,5 +1,32 @@
 .advantages {
-  margin: 0 20px 39px;
+  margin: 0 0 39px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    margin: 0 0 47px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: $color-special-gray-6;
+      bottom: 0;
+      left: 0;
+
+      // @media (min-width: $desktop-width) {
+      //   display: none;display
+      // }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .advantages__title {
@@ -7,10 +34,16 @@
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
-  list-style: none;
+  list-style-type: none;
   display: flex;
   gap: 20px;
   flex-direction: column;
@@ -26,7 +59,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    gap: 75px;
+    justify-content: space-between;
+    gap: 0;
   }
 }
 
@@ -64,6 +98,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 40px 40px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -75,4 +114,12 @@
 .advantages__text {
   padding: 2px 0;
   display: block;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

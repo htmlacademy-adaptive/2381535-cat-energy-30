@@ -7,6 +7,12 @@
   justify-content: space-between;
   width: 188px;
   margin: 0 auto 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    text-align: end;
+    margin: 0 0 0 auto;
+  }
 }
 
 .example-price__text {

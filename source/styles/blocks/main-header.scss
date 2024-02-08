@@ -1,10 +1,24 @@
 .main-header {
   background-color: $color-white;
-  margin: 13px 20px 14px;
-  padding: 0;
+  padding: 13px 20px 14px;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 25px 30px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 55px  auto 0;
+    padding: 0;
+    background-color: transparent;
+  }
 }
 
 .main-header__logo {
@@ -19,6 +33,16 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 177px;
+    height: 50px;
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
   }
 }
 
@@ -47,6 +71,29 @@
   }
 }
 
-.main-header__navigation {
-  //
+.main-header__navigation--wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 610px;
+  }
+}
+
+.main-header__navigation--wrapper a {
+  @media (min-width: $desktop-width) {
+    color: $color-white;
+  }
+}
+
+.main-header__navigation--wrapper::before {
+  @media (min-width: $desktop-width) {
+    width: 720px;
+    height: 694px;
+    top: -69px;
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-color: $color-green;
+    z-index: -1;
+  }
 }
