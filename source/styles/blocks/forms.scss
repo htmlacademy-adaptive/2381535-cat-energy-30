@@ -1,14 +1,12 @@
 .forms {
-  margin: 0;
-  padding: 27px 0 32px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding-left: 0;
   }
 }
 
@@ -32,13 +30,11 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  margin: 0 20px 37px;
 
   @media (min-width: $tablet-width) {
     line-height: 60px;
     font-size: 60px;
-    padding: 0 0 0 40px;
-    margin: 65px 30px 0;
+    margin-top: 65px;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +50,6 @@
   font-weight: 400;
   text-transform: uppercase;
   width: 230px;
-  margin: 0 20px 39px;
 
   @media (min-width: $tablet-width) {
     line-height: 30px;

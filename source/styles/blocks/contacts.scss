@@ -5,12 +5,10 @@
 
 .contacts__wrapper {
   display: flex;
-  margin: 0;
-  padding: 26px 20px;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 60px 40px;
   }
 
   @media (min-width: $desktop-width) {

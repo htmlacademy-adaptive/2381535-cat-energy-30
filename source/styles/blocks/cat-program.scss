@@ -1,5 +1,4 @@
 .cat-program {
-  padding: 22px 20px 19px;
   position: relative;
   grid-area: cat-program;
 }
@@ -12,6 +11,10 @@
   background-color: $color-special-gray-2;
   left: 0;
   bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .cat-program .form__item {

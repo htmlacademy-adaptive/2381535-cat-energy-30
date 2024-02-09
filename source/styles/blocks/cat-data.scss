@@ -1,5 +1,4 @@
 .cat-data {
-  padding: 0 20px 24px;
   position: relative;
   grid-area: cat-data;
 }
@@ -12,6 +11,10 @@
   background-color: $color-special-gray-2;
   left: 0;
   bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .cat-data input {

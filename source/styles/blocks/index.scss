@@ -1,3 +1,25 @@
 .index {
   //
 }
+
+.index__wrapper {
+  background-color: $color-basic-gray;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-white;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: $color-basic-gray;
+      height: 462px;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    //
+  }
+}

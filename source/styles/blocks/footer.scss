@@ -11,20 +11,16 @@
   background-color: $color-basic-gray;
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 40px 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding: 55px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
+    //
   }
 }
 

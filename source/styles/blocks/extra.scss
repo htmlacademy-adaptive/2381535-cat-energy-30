@@ -38,6 +38,8 @@
 
 .extra__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: $desktop-width) {
     width: 896px;
@@ -45,7 +47,15 @@
 }
 
 .extra__item {
-  //
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    //
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 325px 243px 82px 244px;
+  }
 }
 
 .extra__name {
@@ -73,7 +83,43 @@
 }
 
 .extra__gift {
-  //
+  background-color: $color-green;
+  color: $color-white;
+  text-align: center;
+  background-image:
+    linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
+    url("../../images/gift-mobile@1x.jpg");
+  background-size: cover;
+  width: 280px;
+  height: 290px;
+  position: relative;
+  margin-inline: auto;
+
+  @media (min-width: $tablet-width) {
+    background-image:
+      linear-gradient(
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../../images/gift-tablet@1x.jpg");
+    width: 707px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image:
+      linear-gradient(
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../../images/gift-desktop@1x.jpg");
+    width: 245px;
+    height: 288px;
+    margin: 0;
+  }
 }
 
 // modifical

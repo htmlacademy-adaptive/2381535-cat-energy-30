@@ -1,31 +1,23 @@
 .advantages {
-  margin: 0 0 39px;
-  padding: 0 20px;
-
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
-    margin: 0 0 47px;
     position: relative;
-
-    &::after {
-      position: absolute;
-      content: "";
-      height: 1px;
-      width: 100%;
-      background-color: $color-special-gray-6;
-      bottom: 0;
-      left: 0;
-
-      // @media (min-width: $desktop-width) {
-      //   display: none;display
-      // }
-    }
+    --is-underline: "";
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
     padding: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: var(--is-underline, none);
+    height: 1px;
+    width: 100%;
+    background-color: $color-special-gray-6;
+    bottom: 0;
+    left: 0;
   }
 }
 

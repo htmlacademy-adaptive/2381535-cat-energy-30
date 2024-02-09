@@ -2,8 +2,17 @@
   //
 }
 
-.page__wrapper {
-  //
+.page__centerer {
+  margin-inline: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-inline: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    inline-size: 1220px;
+    margin-inline: auto;
+  }
 }
 
 .page__wrapper::after {

@@ -16,16 +16,16 @@
 <body class="page__body">
 
   <!-- HEADER -->
-  <header class="main-header">
+  <header class="main-header page__centerer">
     <!-- logo -->
     <a class="main-header__logo logo" href="index.html" aria-label="Логотип CAT ENERGY">
       <picture>
-        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml">
+        <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
         <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy">
       </picture>
       <picture>
-        <source media="(min-width: 1440px)" srcset="images/logo-cat-energy.svg" width="118" height="21" type="image/svg+xml">
+        <source media="(min-width: 1280px)" srcset="images/logo-cat-energy.svg" width="118" height="21" type="image/svg+xml">
         <img class="logo__image" src="images/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
       </picture>
     </a>
@@ -50,7 +50,7 @@
   </header>
 
   <!-- MAIN -->
-  <main class="catalog">
+  <main class="catalog page__centerer">
     <h1 class="catalog__title">Каталог продукции</h1>
     <!-- catalog -->
     <section class="catalog__product catalog-product">
@@ -233,6 +233,7 @@
             <button class="extra__button button" type="button">заказать</button>
           </li>
         </ul>
+        <!-- gift -->
         <div class="extra__gift gift">
           <span class="gift__description">Закажите все<br> и получите чехол для<br> кота в подарок!</span>
         </div>
@@ -245,7 +246,7 @@
     <!-- contacts -->
     <div class="footer__contacts contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper page__centerer">
         <p class="contacts__text">приглашаем<br> к сотрудничеству<br> дилеров!</p>
         <div class="contacts__address-wraapper">
           <span class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8</span>
@@ -253,14 +254,14 @@
         </div>
       </div>
       <picture>
-        <source type="image/jpg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="400">
+        <source type="image/jpg" media="(min-width: 1280px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="400">
         <source type="image/jpg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" width="768" height="400">
         <img class="contacts__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта проезда">
       </picture>
     </div>
     <!-- footer navigation -->
     <div class="footer__wrapper">
-      <div class="footer__navigation">
+      <div class="footer__navigation page__centerer">
         <!-- logo -->
         <div class="footer__logo logo">
           <a class="logo__link" href="#">
