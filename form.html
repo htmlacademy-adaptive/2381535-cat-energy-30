@@ -16,15 +16,18 @@
 <body class="page__body">
 
   <!-- HEADER -->
-  <header class="main-header">
+  <header class="main-header page__centerer">
     <!-- logo -->
     <a class="main-header__logo logo" href="index.html" aria-label="Логотип CAT ENERGY">
       <picture>
-        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml">
-        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml">
+        <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
         <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy">
       </picture>
-      <svg class="logo__text" width="101" height="18"></svg>
+      <picture>
+        <source media="(min-width: 1280px)" srcset="images/logo-cat-energy.svg" width="118" height="21" type="image/svg+xml">
+        <img class="logo__image" src="images/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
+      </picture>
     </a>
     <!-- burger button -->
     <button class="main-header__button" type="button">
@@ -47,7 +50,7 @@
   </header>
 
   <!-- MAIN -->
-  <main class="forms">
+  <main class="forms page__centerer">
     <h1 class="forms__title">Подбор программы</h1>
     <p class="forms__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="forms__data form" action="https://echo.htmlacademy.ru/" method="post">
@@ -101,8 +104,8 @@
       </fieldset>
       <!-- data person -->
       <fieldset class="form__fieldset data-person">
-        <legend class="form__title">Контактные данные<br>(владельца кота)</legend>
-        <ul class="form__list">
+        <legend class="form__title">Контактные данные<br> (владельца кота)</legend>
+        <ul class="form__list data-person__list">
           <li class="form__item">
             <label class="form__label">
               <span class="form__name">E-mail:<span aria-hidden="true">*</span></span>
@@ -125,7 +128,7 @@
       <!-- extra -->
       <fieldset class="form__fieldset form-extra">
         <legend class="form__title">Дополнительно</legend>
-        <ul class="form__list">
+        <ul class="form__list form-extra__list">
           <li class="form__item">
             <label class="form__label">
               <input class="form__input" type="checkbox" name="extra product" value="sweetener" checked>
@@ -153,8 +156,10 @@
         </ul>
       </fieldset>
       <!-- form button -->
-      <button class="form__button button" type="submit">отправить заявку</button>
-      <span class="form__text-important" aria-hidden="true">* — Обязательные поля</span>
+      <div class="form__button-wrapper">
+        <button class="form__button button" type="submit">отправить заявку</button>
+        <span class="form__text-important" aria-hidden="true">* — Обязательные поля</span>
+      </div>
     </form>
   </main>
 
@@ -163,7 +168,7 @@
     <!-- contacts -->
     <div class="footer__contacts contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper page__centerer">
         <p class="contacts__text">приглашаем<br> к сотрудничеству<br> дилеров!</p>
         <div class="contacts__address-wraapper">
           <span class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8</span>
@@ -177,38 +182,40 @@
       </picture>
     </div>
     <!-- footer navigation -->
-    <div class="footer__navigation">
-      <!-- logo -->
-      <div class="footer__logo logo">
-        <a class="logo__link" href="#">
-          <span class="visually-hidden">Логотип кэт енерджи</span>
-          <img src="images/logo-cat-energy.svg" width="128" height="24" alt="Логотип Cat Energy.">
-        </a>
-      </div>
-      <!-- social -->
-      <ul class="social">
-        <li class="social__item">
-          <a class="social__link social__link--icon_vk" href="#">
-            <span class="visually-hidden">Вконтакте</span>
+    <div class="footer__wrapper">
+      <div class="footer__navigation page__centerer">
+        <!-- logo -->
+        <div class="footer__logo logo">
+          <a class="logo__link" href="#">
+            <span class="visually-hidden">Логотип кэт енерджи</span>
+            <img src="images/logo-cat-energy.svg" width="128" height="24" alt="Логотип Cat Energy.">
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--icon_youtube" href="#">
-            <span class="visually-hidden">ЮТуб</span>
+        </div>
+        <!-- social -->
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link--icon_vk" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--icon_youtube" href="#">
+              <span class="visually-hidden">ЮТуб</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--icon_telegram" href="#">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+        </ul>
+        <!-- copyright -->
+        <div class="copyright">
+          <a class="copyright__link" href="#">
+            <span class="copyright__name">HTML Academy</span>
+            <div class="copyright__logo"></div>
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--icon_telegram" href="#">
-            <span class="visually-hidden">Телеграм</span>
-          </a>
-        </li>
-      </ul>
-      <!-- copyright -->
-      <div class="copyright">
-        <a class="copyright__link" href="#">
-          <span class="copyright__name">HTML Academy</span>
-          <div class="copyright__logo"></div>
-        </a>
+        </div>
       </div>
     </div>
   </footer>
