@@ -232,7 +232,6 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 0 0 20px;
 }
 @media (min-width: 1280px) {
   .promo {
@@ -288,7 +287,12 @@ body {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    margin: 0 0 40px;
+    margin-left: 90px;
+  }
+}
+@media (min-width: 1280px) {
+  .promo__title {
+    margin-left: 80px;
   }
 }
 
@@ -303,7 +307,12 @@ body {
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin: 0;
+    margin-left: 90px;
+  }
+}
+@media (min-width: 1280px) {
+  .promo__text {
+    margin-left: 80px;
   }
 }
 
@@ -332,7 +341,6 @@ body {
   text-decoration: none;
   display: block;
   min-width: 280px;
-  margin: 0 20px;
 }
 @media (min-width: 768px) {
   .promo__link {
@@ -341,13 +349,13 @@ body {
     line-height: 26px;
     position: absolute;
     top: 295px;
-    margin: 0 0 0 120px;
+    margin-left: 90px;
     box-sizing: border-box;
   }
 }
 @media (min-width: 1280px) {
   .promo__link {
-    margin: 52px 0 0 80px;
+    margin-left: 80px;
   }
 }
 
