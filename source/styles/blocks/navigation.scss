@@ -1,18 +1,12 @@
 .navigation {
-  display: none;
-  background-color: $color-white;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    background-color: transparent;
-  }
+  //
 }
 
 .navigation__list {
   list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -29,7 +23,12 @@
 }
 
 .navigation__item {
-  //
+  margin-inline: -20px;
+  min-height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 1px $color-special-gray-6, 0 1px $color-special-gray-6;
 }
 
 .navigation__link {

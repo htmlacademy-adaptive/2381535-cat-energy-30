@@ -16,7 +16,6 @@
 .diet__item {
   background-color: $color-basic-gray;
   position: relative;
-  display: flow-root;
   padding: 30px 33px 18px 20px;
   min-width: 280px;
   box-sizing: border-box;
@@ -29,26 +28,35 @@
     --icon-shape: url("../../icons/stack.svg#cat-going");
   }
 
-  &::before {
+  &::after {
     content: "";
-    display: block;
-    float: left;
+    position: absolute;
     width: 70px;
     height: 70px;
+    left: 10px;
+    top: 18px;
     background-image: var(--icon-shape);
     background-position: center;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      right: 63px;
-      top: 81px;
+      width: 250px;
+      height: 250px;
+      left: auto;
+      right: 50px;
+      top: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 130px;
+      height: 130px;
+      left: 35px;
+      right: auto;
+      top: 34px;
     }
   }
 
-  &::after {
+  &::before {
     position: absolute;
     content: "";
     height: 1px;
@@ -69,6 +77,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    padding: 77px 61px 55px 52px;
   }
 }
 
@@ -79,12 +88,17 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $color-black;
-  margin: 0 0 29px;
+  margin: 0 0 29px 70px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin: 0 0 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 162px;
   }
 }
 
@@ -137,5 +151,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-top: 48px;
   }
 }

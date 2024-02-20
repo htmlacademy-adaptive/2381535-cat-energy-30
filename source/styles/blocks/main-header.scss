@@ -1,8 +1,5 @@
 .main-header {
-  background-color: $color-white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
@@ -11,6 +8,32 @@
   @media (min-width: $desktop-width) {
     background-color: transparent;
   }
+}
+
+.main-header__navigation {
+  background-color: $color-white;
+  position: absolute;
+  z-index: 2;
+  top: 64px;
+  width: 100%;
+  padding-inline: 20px;
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-white;
+  align-items: center;
+  min-height: 65px;
 }
 
 .main-header__logo {
@@ -47,6 +70,7 @@
   background-color: $color-white;
   background-position: center;
   border: none;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.8;
@@ -55,12 +79,21 @@
   &:active {
     opacity: 0.6;
   }
-}
 
-@media (min-width: $tablet-width) {
-  .main-header__button {
+  @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-header__button--active {
+  width: 18px;
+  height: 18px;
+  background-image: url("../../icons/stack.svg#button-cross");
+  background-repeat: no-repeat;
+  background-color: $color-white;
+  background-position: center;
+  border: none;
+  cursor: pointer;
 }
 
 .main-header__navigation--wrapper {
@@ -88,4 +121,16 @@
     background-color: $color-green;
     z-index: -1;
   }
+}
+
+.main-header__navigation--opened {
+  display: block;
+}
+
+.main-header__navigation--closed {
+  display: none;
+}
+
+.main-header__navigation--nojs {
+  display: block;
 }

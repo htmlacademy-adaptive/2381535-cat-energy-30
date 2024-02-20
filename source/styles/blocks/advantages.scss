@@ -41,6 +41,7 @@
   flex-direction: column;
   padding: 0;
   flex-wrap: wrap;
+  counter-reset: num;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -57,11 +58,13 @@
 }
 
 .advantages__item {
-  color: $color-dark-gray;
+  color: #444444;
   font-size: 14px;
   line-height: 18px;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   gap: 20px;
+  position: relative;
 
   &--icon_leaf {
     --icon-shape: url("../../icons/stack.svg#leaf");
@@ -97,9 +100,29 @@
     }
   }
 
+
   @media (min-width: $tablet-width) {
     min-height: 280px;
     width: 250px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    padding: 40px 0 57px;
+    gap: 31px;
+    box-sizing: border-box;
+
+    &::before {
+      content: counter(num);
+      counter-increment: num;
+      position: absolute;
+      font-family: "Oswald", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      top: 0;
+      left: 118px;
+      color: $color-basic-gray;
+      text-align: center;
+      z-index: -1;
+    }
   }
 }
 

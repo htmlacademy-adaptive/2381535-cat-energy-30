@@ -3,35 +3,94 @@
 }
 
 .card__image {
-  //
+  display: block;
+  margin-top: 25px;
+  margin-inline: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -213px;
+  }
 }
 
 .card__title {
   font-family: "Oswald", sans-serif;
   color: $color-black-2;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  max-width: 80px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 auto 8px;
+    max-width: 135px;
+    text-align: center;
+  }
 }
 
 .card__weight {
-  //
+  display: flex;
+  justify-content: space-between;
 }
 
 .card__taste {
-  //
+  display: flex;
+  justify-content: space-between;
 }
 
 .card__price {
-  //
+  display: flex;
+  justify-content: space-between;
 }
 
 .card__button {
   width: 100%;
+  grid-column: 1/3;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    margin: auto 0 0;
+  }
 }
 
 .card span {
   color: $color-dark-gray;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.card__wrapper {
+  gap: 12px;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    flex-direction: column;
+    display: flex;
+    gap: 12px;
+  }
+}
+
+.card__wrapper div {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: $color-special-gray;
+      bottom: -5px;
+      left: 0;
+    }
+  }
 }
