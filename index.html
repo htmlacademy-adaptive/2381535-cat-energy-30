@@ -17,24 +17,26 @@
 
   <!-- HEADER -->
   <header class="main-header page__centerer">
-    <!-- logo -->
-    <a class="main-header__logo logo" href="index.html" aria-label="Логотип CAT ENERGY">
-      <picture>
-        <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
-        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
-        <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy">
-      </picture>
-      <picture>
-        <source media="(min-width: 1280px)" srcset="images/logo-cat-energy.svg" width="118" height="21" type="image/svg+xml">
-        <img class="logo__image" src="images/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
-      </picture>
-    </a>
-    <!-- burger button -->
-    <button class="main-header__button" type="button">
-      <span class="visually-hidden">Меню</span>
-    </button>
+    <div class="main-header__wrapper">
+      <!-- logo -->
+      <a class="main-header__logo logo" href="index.html" aria-label="Логотип CAT ENERGY">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy">
+        </picture>
+        <picture>
+          <source media="(min-width: 1280px)" srcset="images/logo-cat-energy.svg" width="118" height="21" type="image/svg+xml">
+          <img class="logo__image" src="images/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
+      </a>
+      <!-- burger button -->
+      <button class="main-header__button main-header__button--active" type="button">
+        <span class="visually-hidden">Меню</span>
+      </button>
+    </div>
     <!-- navigation -->
-    <nav class="main-header__navigation main-header__navigation--wrapper navigation">
+    <nav class="main-header__navigation main-header__navigation--wrapper main-header__navigation--closed  main-header__navigation--nojs navigation">
       <ul class="navigation__list ">
         <li class="navigation__item">
           <a class="navigation__link" href="index.html" aria-current="page">главная</a>
@@ -196,6 +198,7 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>
