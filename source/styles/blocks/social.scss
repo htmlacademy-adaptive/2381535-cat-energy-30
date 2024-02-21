@@ -8,6 +8,10 @@
   padding: 0;
   align-self: center;
   margin: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__item {
