@@ -22,53 +22,38 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  margin: 0 0 36px;
-  padding: 0;
-  gap: 20px;
-  width: 100%;
-  display: flex;
+  margin: 0 0 36px -20px;
+  padding-inline: 20px;
+  width: fit-content;
   white-space: nowrap;
+  position: relative;
+  background-color: $color-white;
 
-  &::after {
+  &::before {
     content: "";
+    position: absolute;
     height: 2px;
-    width: 100%;
-    margin-top: 16px;
-    margin-right: -20px;
+    width: 100vw;
+    right: 0;
+    top: 16px;
     background-color: $color-green;
+    box-shadow: 100vw 0 $color-green;
+    z-index: -1;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 40px;
+    padding-inline: 40px;
+    margin-left: 0;
 
     &::after {
       margin-top: 24px;
-    }
-
-    &::before {
-      position: absolute;
-      content: "";
-      height: 2px;
-      width: 100%;
-      margin-right: 100%;
-      right: 0;
-      margin-top: 24px;
-      background-color: $color-green;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 0;
-
-    &::after {
-      box-shadow: 800px 0 0 0 $color-green;
-    }
-
-    &::before {
-      right: 40px;
-    }
+    margin-left: -40px;
   }
 }
 

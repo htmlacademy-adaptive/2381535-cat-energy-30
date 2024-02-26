@@ -15,18 +15,29 @@
   line-height: 26px;
   padding: 0;
   gap: 20px;
-  width: 100%;
-  display: flex;
+  width: fit-content;
   white-space: nowrap;
-}
+  position: relative;
+  background-color: $color-white;
+  padding-inline: 20px;
+  margin-left: -20px;
 
-.form__title::after {
-  content: "";
-  height: 2px;
-  width: 100%;
-  margin-top: 15px;
-  margin-right: -20px;
-  background-color: $color-green;
+  @media (min-width: $tablet-width) {
+    padding-inline: 40px;
+    margin-left: -40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    top: 18px;
+    right: 0;
+    background-color: $color-green;
+    box-shadow: 100vw 0 $color-green;
+    z-index: -1;
+  }
 }
 
 .form__fieldset {

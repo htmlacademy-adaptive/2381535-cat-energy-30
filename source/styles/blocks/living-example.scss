@@ -1,5 +1,7 @@
 .living-example {
   background-color: $color-basic-gray;
+  padding-top: 25px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     background-color: $color-white;
