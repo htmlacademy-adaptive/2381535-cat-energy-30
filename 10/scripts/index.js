@@ -1,0 +1,1 @@
+var e=document.querySelector(".main-header__button"),n=document.querySelector(".main-header__navigation");n.classList.remove("main-header__navigation--nojs");e.classList.remove("main-header__button--active");
