@@ -6,6 +6,7 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 26px 0;
 
   @media (min-width: $tablet-width) {
     padding: 60px 40px;
@@ -17,6 +18,7 @@
     padding: 60px 80px;
     background-color: $color-white;
     margin: 95px auto auto 110px;
+    box-sizing: border-box;
   }
 }
 
@@ -44,10 +46,13 @@
   font-weight: 400;
   display: flex;
   flex-direction: column;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     justify-content: space-between;
+    width: 157px;
+    text-align: end;
   }
 }
 
@@ -67,4 +72,10 @@
 
 .contacts__wrapper--background {
   background-color: $color-basic-gray;
+  box-shadow: 100px 0 $color-basic-gray, -100px 0 $color-basic-gray;
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-white;
+    box-shadow: none;
+  }
 }
