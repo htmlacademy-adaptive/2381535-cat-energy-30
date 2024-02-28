@@ -2002,6 +2002,7 @@ body {
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 26px 0;
 }
 @media (min-width: 768px) {
   .contacts__wrapper {
@@ -2015,6 +2016,7 @@ body {
     padding: 60px 80px;
     background-color: #ffffff;
     margin: 95px auto auto 110px;
+    box-sizing: border-box;
   }
 }
 
@@ -2043,11 +2045,14 @@ body {
   font-weight: 400;
   display: flex;
   flex-direction: column;
+  width: 140px;
 }
 @media (min-width: 768px) {
   .contacts__address-wraapper {
     font-size: 16px;
     justify-content: space-between;
+    width: 157px;
+    text-align: end;
   }
 }
 
@@ -2059,6 +2064,13 @@ body {
 
 .contacts__wrapper--background {
   background-color: #f2f2f2;
+  box-shadow: 100px 0 #f2f2f2, -100px 0 #f2f2f2;
+}
+@media (min-width: 1280px) {
+  .contacts__wrapper--background {
+    background-color: #ffffff;
+    box-shadow: none;
+  }
 }
 
 .social {
