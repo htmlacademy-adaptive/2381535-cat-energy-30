@@ -20,6 +20,10 @@
     background-color: $color-white;
     width: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-basic-gray;
+  }
 }
 
 .example-time__value {

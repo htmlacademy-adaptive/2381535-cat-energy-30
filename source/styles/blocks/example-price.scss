@@ -17,6 +17,13 @@
     margin: auto 0 auto auto;
     gap: 9px;
   }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin: 0;
+    width: auto;
+    gap: 63px;
+  }
 }
 
 .example-price__text {

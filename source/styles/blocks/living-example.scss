@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    //
+    padding-top: 0;
   }
 }
 
@@ -48,6 +48,7 @@
   @media (min-width: $desktop-width) {
     width: 436px;
     margin: 0 0 69px;
+    z-index: 1;
   }
 }
 
@@ -64,8 +65,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 380px;
+    width: 366px;
     flex-wrap: wrap;
+    z-index: 1;
+    gap: 60px 42px;
+    margin-bottom: 75px;
   }
 }
 
@@ -90,6 +94,8 @@
 
 .living-example__container {
   @media (min-width: $desktop-width) {
-    display: flex;
+    display: grid;
+    position: relative;
+    padding-top: 70px;
   }
 }
