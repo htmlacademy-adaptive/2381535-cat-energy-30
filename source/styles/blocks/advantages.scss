@@ -18,6 +18,10 @@
     background-color: $color-special-gray-6;
     bottom: 0;
     left: 0;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }
 

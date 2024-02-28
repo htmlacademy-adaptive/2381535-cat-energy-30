@@ -1,30 +1,38 @@
 .slider {
   margin: 0 auto;
   display: flex;
-  position: relative;
+  width: 280px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 4px;
-    height: 256px;
-    background-color: $color-dark-gray-2;
-    top: 0;
-    left: 138px;
-    border-radius: 2px;
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+    margin-bottom: 100px;
   }
 }
 
 .slider__left {
-  object-fit: cover;
-  object-position: left;
-  width: 140px;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .slider__right {
-  object-position: right;
-  object-fit: cover;
-  width: 140px;
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.slider__stick {
+  height: 256px;
+  width: 4px;
+  border-radius: 4px;
+  background-color: $color-dark-gray-2;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+  }
 }
 
 .slider__button {
@@ -34,10 +42,14 @@
   width: 40px;
   height: 40px;
   top: 108px;
-  left: 120px;
+  left: -18px;
   border-radius: 50%;
   background-color: $color-white;
-  order: 1;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 236px;
+  }
 
   &::after {
     position: absolute;
@@ -49,7 +61,7 @@
     margin-left: -20px;
     margin-top: -20px;
     background-color: $color-dark-gray-2;
-    order: 1;
+    z-index: 1;
   }
 
   &:hover {

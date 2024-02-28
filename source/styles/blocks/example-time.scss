@@ -4,8 +4,22 @@
 
 .example-time__text {
   color: $color-dark-gray;
+  background-color: #f2f2f2;
   font-size: 12px;
   line-height: 12px;
+  font-weight: 400;
+  order: 1;
+  margin: -10px auto;
+  width: 77px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    padding-inline: 10px;
+    background-color: $color-white;
+    width: auto;
+  }
 }
 
 .example-time__value {
@@ -13,4 +27,22 @@
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
+  width: 124px;
+  height: 56px;
+  box-sizing: border-box;
+  margin: 0;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  border: 1px solid $color-special-gray;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom: 20px;
+    width: 162px;
+    height: 72px;
+  }
 }

@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $color-white;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,21 +42,25 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    margin: 0 0 55px;
   }
 
   @media (min-width: $desktop-width) {
     width: 436px;
+    margin: 0 0 69px;
   }
 }
 
 .living-example__list {
-  margin: 0;
+  margin: 0 auto 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 124px 124px;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    margin: 0 0 100px;
+    gap: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,7 +70,12 @@
 }
 
 .living-example__item {
-  //
+  display: grid;
+  width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .living-example__price {
