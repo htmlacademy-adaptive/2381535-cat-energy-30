@@ -2,14 +2,6 @@
   position: relative;
 }
 
-.catalog::after {
-  position: absolute;
-  content: "";
-  height: 1px;
-  width: 100%;
-  background-color: $color-black;
-}
-
 .catalog__title {
   font-family: "Oswald", sans-serif;
   color: $color-black;

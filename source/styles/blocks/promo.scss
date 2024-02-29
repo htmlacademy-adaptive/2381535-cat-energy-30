@@ -6,7 +6,22 @@
   margin-bottom: 20px;
 
   @media (min-width: $desktop-width) {
-    height: 662px;
+    min-height: 662px;
+    width: 1220px;
+    margin-inline: auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: fixed;
+      width: 100vw;
+      top: 0;
+      height: 694px;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../images/index-background-desktop.jpg");
+      background-repeat: no-repeat;
+      background-position: left top;
+      left: 50%;
+    }
   }
 }
 
@@ -30,18 +45,19 @@
     background-color: $color-white;
     color: $color-black;
     padding: 65px 200px 21px 90px;
-    margin: 0 30px 630px;
-    height: auto;
+    margin: 0 30px 0;
+    min-height: auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    padding: 110px 100px 0 80px;
-    margin: 0 auto;
+    width: 610px;
+    padding: 110px 100px 52px 80px;
     background-image: none;
-    background-color: $color-white;
+    background-color: #ffffff;
     z-index: -2;
-    color: $color-black;
+    color: #000000;
+    min-height: auto;
+    margin-bottom: 0;
   }
 }
 
@@ -56,11 +72,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    margin-left: 90px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 80px;
+    margin: 0 0 40px;
   }
 }
 
@@ -75,11 +87,11 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    margin-left: 90px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
+    max-width: 414px;
   }
 }
 
@@ -90,14 +102,21 @@
   right: 50%;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 266px;
+    position: relative;
+    top: -54px;
+    left: -290px;
+    bottom: auto;
     z-index: -1;
+    order: 1;
+    width: 709px;
   }
 
   @media (min-width: $desktop-width) {
+    position: absolute;
     top: 29px;
-    left: 170px;
+    left: 447px;
+    translate: 0;
+    z-index: 1;
   }
 }
 
@@ -112,13 +131,15 @@
     padding: 14px 26px;
     font-size: 20px;
     line-height: 26px;
-    position: absolute;
-    top: 295px;
-    margin-left: 90px;
+    position: relative;
+    top: 29px;
+    margin-left: 120px;
     box-sizing: border-box;
+    width: 244px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
+    top: 0;
   }
 }
