@@ -7,22 +7,30 @@
 
   @media (min-width: $desktop-width) {
     min-height: 662px;
-    width: 1220px;
     margin-inline: auto;
     position: relative;
 
     &::before {
       content: "";
-      position: fixed;
-      width: 100vw;
-      top: 0;
+      position: absolute;
+      top: -65px;
       height: 694px;
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../images/index-background-desktop.jpg");
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop.jpg");
+      background-color: #424146;
       background-repeat: no-repeat;
       background-position: left top;
       left: 50%;
+      right: 0;
     }
   }
+}
+
+.promo__wrapper {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 .promo__container {
@@ -39,6 +47,10 @@
   position: relative;
   box-sizing: border-box;
   padding-top: 27px;
+
+  @media (max-width: $mobile-only) {
+    margin-inline: -20px;
+  }
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     background-image: none;
