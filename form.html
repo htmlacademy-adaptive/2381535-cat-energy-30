@@ -17,24 +17,26 @@
 
   <!-- HEADER -->
   <header class="main-header page__centerer">
-    <!-- logo -->
-    <a class="main-header__logo logo" href="index.html" aria-label="Логотип CAT ENERGY">
-      <picture>
-        <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
-        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
-        <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy">
-      </picture>
-      <picture>
-        <source media="(min-width: 1280px)" srcset="images/logo-cat-energy.svg" width="118" height="21" type="image/svg+xml">
-        <img class="logo__image" src="images/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
-      </picture>
-    </a>
-    <!-- burger button -->
-    <button class="main-header__button" type="button">
-      <span class="visually-hidden">Меню</span>
-    </button>
+    <div class="main-header__wrapper">
+      <!-- logo -->
+      <a class="main-header__logo logo" href="index.html" aria-label="Логотип CAT ENERGY">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта Cat Energy">
+        </picture>
+        <picture>
+          <source media="(min-width: 1280px)" srcset="images/logo-cat-energy.svg" width="118" height="21" type="image/svg+xml">
+          <img class="logo__image" src="images/logo-cat-energy.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
+      </a>
+      <!-- burger button -->
+      <button class="main-header__button main-header__button--closed main-header__button--nojs" type="button">
+        <span class="visually-hidden">Меню</span>
+      </button>
+    </div>
     <!-- navigation -->
-    <nav class="main-header__navigation navigation">
+    <nav class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs navigation">
       <ul class="navigation__list ">
         <li class="navigation__item">
           <a class="navigation__link" href="index.html" aria-current="page">главная</a>
@@ -42,7 +44,7 @@
         <li class="navigation__item">
           <a class="navigation__link" href="catalog.html">каталог продукции</a>
         </li>
-        <li class="navigation__item">
+        <li class="navigation__item navigation__item--current">
           <a class="navigation__link" href="form.html">подбор программы</a>
         </li>
       </ul>
@@ -168,7 +170,7 @@
     <!-- contacts -->
     <div class="footer__contacts contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__wrapper page__centerer">
+      <div class="contacts__wrapper contacts__wrapper--background page__centerer">
         <p class="contacts__text">приглашаем<br> к сотрудничеству<br> дилеров!</p>
         <div class="contacts__address-wraapper">
           <span class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8</span>
@@ -176,7 +178,7 @@
         </div>
       </div>
       <picture>
-        <source type="image/jpg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="400">
+        <source type="image/jpg" media="(min-width: 1280px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="400">
         <source type="image/jpg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" width="768" height="400">
         <img class="contacts__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта проезда">
       </picture>
