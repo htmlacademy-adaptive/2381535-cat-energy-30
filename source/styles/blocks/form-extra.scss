@@ -1,16 +1,21 @@
 .form-extra {
   grid-area: form-extra;
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .form-extra .form__title {
   margin-bottom: 34px;
-}
 
-.form-extra .form__item {
-  height: 30px;
-
-  &:not(:last-child) {
-    margin-bottom: 13px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
   }
 }
 
@@ -21,7 +26,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 304px auto;
+    gap: 32px 40px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,6 +1,19 @@
 .cat-program {
   position: relative;
   grid-area: cat-program;
+  padding: 22px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 27px 27px;
+    border: 1px solid $color-special-gray-3;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    box-sizing: border-box;
+    padding: 24px 28px;
+  }
 }
 
 .cat-program::after {
@@ -17,11 +30,6 @@
   }
 }
 
-.cat-program .form__item {
-  height: 30px;
-
-  &:not(:last-child) {
-    margin-bottom: 13px;
-  }
+.cat-program .form__list {
+  gap: 13px;
 }
-
