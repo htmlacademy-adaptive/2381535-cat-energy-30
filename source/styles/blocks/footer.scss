@@ -16,8 +16,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    min-height: 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,8 +47,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: auto 0;
+    margin: 0;
     padding: 0;
+    align-self: center;
   }
 
   &:hover {

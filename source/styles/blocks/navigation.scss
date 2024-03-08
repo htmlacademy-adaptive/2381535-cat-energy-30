@@ -24,7 +24,7 @@
 
 .navigation__item {
   margin-inline: -20px;
-  min-height: 66px;
+  min-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +45,7 @@
       content: "";
       width: 100%;
       height: 2px;
-      bottom: 8px;
+      bottom: 4px;
       background-color: $color-green;
     }
   }

@@ -3,12 +3,12 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 40px;
+    padding-inline: 40px;
     padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    padding-inline: 0;
   }
 }
 

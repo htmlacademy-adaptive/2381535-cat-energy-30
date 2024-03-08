@@ -14,12 +14,12 @@
 }
 
 .data-person .form__title {
-  margin-bottom: 76px;
+  margin-bottom: 35px;
   width: 187px;
   white-space: wrap;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 65px;
+    margin: 0 0 72px;
     white-space: nowrap;
     width: auto;
     margin-left: -40px;
@@ -39,9 +39,13 @@
 }
 
 .data-person input {
-  padding: 14px 40px 13px 15px;
+  padding: 14px 40px 11px 15px;
   width: 100%;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 40px 11px 20px;
+  }
 }
 
 .data-person__list {

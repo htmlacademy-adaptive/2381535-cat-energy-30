@@ -15,6 +15,7 @@
   color: $color-black;
   font-size: 24px;
   line-height: 26px;
+  font-weight: 400;
   padding: 0;
   gap: 20px;
   width: fit-content;
@@ -27,6 +28,8 @@
   @media (min-width: $tablet-width) {
     padding-inline: 40px;
     margin-left: -40px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   &::before {
@@ -34,11 +37,15 @@
     position: absolute;
     height: 2px;
     width: 100vw;
-    top: 18px;
+    top: 14px;
     right: 0;
     background-color: $color-green;
     box-shadow: 100vw 0 $color-green;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 20px;
+    }
   }
 }
 
@@ -99,7 +106,7 @@
 
       @media (min-width: $tablet-width) {
         top: 20px;
-        right: 18px;
+        right: 14px;
       }
     }
   }
@@ -110,8 +117,8 @@
       mask-image: url("../../icons/stack.svg#phone");
 
       @media (min-width: $tablet-width) {
-        top: 19px;
-        right: 18px;
+        top: 18px;
+        right: 14px;
       }
     }
   }
@@ -232,11 +239,12 @@
 .form__text-important {
   text-align: center;
   color: $color-black;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
-    align-self: center;
+    margin-top: 16px;
     font-size: 16px;
   }
 }
