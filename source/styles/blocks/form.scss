@@ -154,6 +154,10 @@
     line-height: 30px;
   }
 
+  &[type="number"] {
+    appearance: textfield;
+  }
+
   &[type="radio"],
   &[type="checkbox"] {
     appearance: none;

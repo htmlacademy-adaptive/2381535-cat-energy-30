@@ -57,7 +57,9 @@
 }
 
 .contacts__address {
-  //
+  @media (min-width: $tablet-width) {
+    margin-top: -2px;
+  }
 }
 
 .contacts__city {

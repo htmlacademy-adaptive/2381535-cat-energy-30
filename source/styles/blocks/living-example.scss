@@ -1,11 +1,12 @@
 .living-example {
   background-color: $color-basic-gray;
   padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     background-color: $color-white;
     padding-bottom: 0;
+    padding-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +25,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin: 0 0 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,7 +62,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    margin: 0 0 100px;
+    margin: 0 0 104px;
     gap: 43px;
   }
 

@@ -12,7 +12,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: -66px;
+      top: -115px;
       height: 694px;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop.jpg");
       background-color: #424146;
@@ -115,7 +115,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     top: -54px;
-    left: 45px;
+    left: 0;
     bottom: auto;
     z-index: -1;
     order: 1;
@@ -147,7 +147,7 @@
     top: 29px;
     margin-left: 90px;
     box-sizing: border-box;
-    width: 244px;
+    min-width: 244px;
   }
 
   @media (min-width: $desktop-width) {

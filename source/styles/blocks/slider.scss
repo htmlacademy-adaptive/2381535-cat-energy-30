@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
-    margin-bottom: 100px;
+    margin-bottom: 103px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,7 +30,7 @@
 
 .slider__stick {
   height: 256px;
-  width: 4px;
+  width: 6px;
   border-radius: 4px;
   background-color: $color-dark-gray-2;
   position: relative;
