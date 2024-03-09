@@ -31,6 +31,7 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  margin: 20px 0 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -46,6 +47,7 @@
   padding: 0;
   flex-wrap: wrap;
   counter-reset: num;
+  margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
     display: grid;
