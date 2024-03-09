@@ -3,7 +3,7 @@
 
   @media (max-width: $tablet-width) {
     margin-top: 13px;
-    margin-bottom: 11px;
+    margin-bottom: 14px;
   }
 
   @media (min-width: $tablet-width) {
@@ -15,6 +15,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
+    margin-top: 55px;
   }
 }
 
@@ -29,11 +30,13 @@
     display: block;
     width: auto;
     padding-inline: 0;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
     z-index: 2;
+    max-width: 700px;
   }
 }
 
@@ -87,7 +90,7 @@
   }
 
   @media (max-width: $mobile-only) {
-    margin-top: -6px;
+    margin-top: -2px;
   }
 
   @media (min-width: $tablet-width) {

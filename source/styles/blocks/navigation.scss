@@ -1,3 +1,4 @@
+/* stylelint-disable max-nesting-depth */
 .navigation {
   //
 }
@@ -19,6 +20,8 @@
   @media (min-width: $desktop-width) {
     justify-content: end;
     background-color: transparent;
+    width: 700px;
+    flex-wrap: wrap;
   }
 }
 
@@ -47,6 +50,10 @@
       height: 2px;
       bottom: 4px;
       background-color: $color-green;
+
+      @media (min-width: $desktop-width) {
+        bottom: 6px;
+      }
     }
   }
 }
@@ -71,6 +78,11 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 60px;
   }
 }
 

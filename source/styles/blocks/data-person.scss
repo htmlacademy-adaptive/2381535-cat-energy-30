@@ -24,6 +24,10 @@
     width: auto;
     margin-left: -40px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .data-person .form__name {
@@ -45,6 +49,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 11px 40px 11px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 40px 10px 20px;
   }
 }
 
