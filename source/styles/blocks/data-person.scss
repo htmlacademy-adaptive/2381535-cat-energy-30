@@ -19,7 +19,7 @@
   white-space: wrap;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 72px;
+    margin: 0 0 76px;
     white-space: nowrap;
     width: auto;
     margin-left: -40px;
@@ -48,7 +48,7 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 40px 11px 20px;
+    padding: 10px 40px 10px 21px;
   }
 
   @media (min-width: $desktop-width) {

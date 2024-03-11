@@ -45,7 +45,7 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      top: 20px;
+      top: 22px;
     }
 
     @media (min-width: $desktop-width) {
@@ -110,12 +110,12 @@
       mask-image: url("../../icons/stack.svg#email");
 
       @media (min-width: $tablet-width) {
-        top: 20px;
+        top: 16px;
         right: 14px;
       }
 
       @media (min-width: $desktop-width) {
-        top: 17px;
+        top: 15px;
         right: 16px;
       }
     }
@@ -127,7 +127,7 @@
       mask-image: url("../../icons/stack.svg#phone");
 
       @media (min-width: $tablet-width) {
-        top: 18px;
+        top: 16px;
         right: 14px;
       }
 
