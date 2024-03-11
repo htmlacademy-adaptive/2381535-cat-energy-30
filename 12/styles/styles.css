@@ -276,7 +276,7 @@ body {
   .navigation__list {
     justify-content: end;
     background-color: transparent;
-    width: 700px;
+    width: 702px;
     flex-wrap: wrap;
   }
 }
@@ -558,6 +558,8 @@ body {
   .diet {
     flex-direction: row;
     gap: 80px;
+    margin-top: 0;
+    margin-bottom: 71px;
   }
 }
 
@@ -596,11 +598,11 @@ body {
 }
 @media (min-width: 1280px) {
   .diet__item::after {
-    width: 130px;
-    height: 130px;
-    left: 35px;
+    width: 140px;
+    height: 140px;
+    left: 32px;
     right: auto;
-    top: 34px;
+    top: 26px;
   }
 }
 .diet__item::before {
@@ -703,6 +705,11 @@ body {
     line-height: 30px;
     margin-top: 48px;
     gap: 26px;
+  }
+}
+@media (min-width: 1280px) {
+  .diet__link {
+    margin-top: 22px;
   }
 }
 
@@ -827,7 +834,7 @@ body {
 @media (min-width: 768px) {
   .advantages__item {
     min-height: 280px;
-    width: 250px;
+    width: 246px;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     padding: 40px 0 57px;
@@ -920,7 +927,7 @@ body {
 }
 @media (min-width: 1280px) {
   .living-example__text {
-    width: 436px;
+    width: 433px;
     margin: 0 0 69px;
     z-index: 1;
   }
@@ -1045,7 +1052,9 @@ body {
     flex-direction: row;
     margin: 0;
     width: auto;
-    gap: 63px;
+    max-width: 366px;
+    gap: 66px;
+    justify-content: flex-start;
   }
 }
 
@@ -2436,10 +2445,21 @@ body {
     text-align: end;
   }
 }
+@media (min-width: 1280px) {
+  .contacts__address-wraapper {
+    text-align: start;
+    margin-right: -2px;
+  }
+}
 
 @media (min-width: 768px) {
   .contacts__address {
     margin-top: -2px;
+  }
+}
+@media (min-width: 1280px) {
+  .contacts__address {
+    margin-top: 0;
   }
 }
 
@@ -2478,6 +2498,7 @@ body {
 @media (min-width: 768px) {
   .social {
     margin: 0;
+    padding-left: 35px;
   }
 }
 
