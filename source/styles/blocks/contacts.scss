@@ -54,11 +54,20 @@
     width: 157px;
     text-align: end;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    margin-right: -2px;
+  }
 }
 
 .contacts__address {
   @media (min-width: $tablet-width) {
     margin-top: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 
