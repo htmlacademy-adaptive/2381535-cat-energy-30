@@ -1270,7 +1270,7 @@ body {
 }
 @media (min-width: 768px) {
   .form__title::before {
-    top: 20px;
+    top: 22px;
   }
 }
 @media (min-width: 1280px) {
@@ -1342,14 +1342,14 @@ body {
 @media (min-width: 768px) {
   .form__label:has(input[type=email]):has(input[type=email])::after,
   .form__label:has(input[type=tel]):has(input[type=email])::after {
-    top: 20px;
+    top: 16px;
     right: 14px;
   }
 }
 @media (min-width: 1280px) {
   .form__label:has(input[type=email]):has(input[type=email])::after,
   .form__label:has(input[type=tel]):has(input[type=email])::after {
-    top: 17px;
+    top: 15px;
     right: 16px;
   }
 }
@@ -1362,7 +1362,7 @@ body {
 @media (min-width: 768px) {
   .form__label:has(input[type=email]):has(input[type=tel])::after,
   .form__label:has(input[type=tel]):has(input[type=tel])::after {
-    top: 18px;
+    top: 16px;
     right: 14px;
   }
 }
@@ -1551,7 +1551,7 @@ body {
 }
 
 .cat-data input {
-  padding: 12px 15px 13px;
+  padding: 13px 15px 12px;
   box-sizing: border-box;
   width: 100%;
 }
@@ -1580,9 +1580,9 @@ body {
 }
 @media (min-width: 768px) {
   .cat-program {
-    padding: 23px 27px 27px;
+    padding: 22px 26px 25px;
     border: 1px solid #e7e7e7;
-    margin-bottom: 64px;
+    margin-bottom: 66px;
   }
 }
 @media (min-width: 1280px) {
@@ -1639,7 +1639,7 @@ body {
 }
 @media (min-width: 768px) {
   .data-person .form__title {
-    margin: 0 0 72px;
+    margin: 0 0 76px;
     white-space: nowrap;
     width: auto;
     margin-left: -40px;
@@ -1670,7 +1670,7 @@ body {
 }
 @media (min-width: 768px) {
   .data-person input {
-    padding: 11px 40px 11px 20px;
+    padding: 10px 40px 10px 21px;
   }
 }
 @media (min-width: 1280px) {
@@ -2396,7 +2396,7 @@ body {
 }
 @media (min-width: 768px) {
   .contacts__wrapper {
-    padding: 60px 40px;
+    padding: 61px 40px;
   }
 }
 @media (min-width: 1280px) {
