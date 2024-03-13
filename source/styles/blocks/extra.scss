@@ -8,6 +8,11 @@
     padding-top: 70px;
     padding-bottom: 75px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 77px;
+    padding-bottom: 87px;
+  }
 }
 
 .extra__wrapper {
@@ -91,6 +96,8 @@
 
   @media (min-width: $desktop-width) {
     width: 896px;
+    padding-inline: 0;
+    border-inline: unset;
   }
 }
 
@@ -113,6 +120,11 @@
     @media (min-width: $tablet-width) {
       padding-inline: 38px;
       margin-inline: -38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-inline: 0;
+      margin-inline: 0;
     }
   }
 

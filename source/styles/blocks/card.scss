@@ -15,6 +15,10 @@
     position: relative;
     text-align: unset;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 11px;
+  }
 }
 
 .card__image {
@@ -44,6 +48,10 @@
     margin: 0 auto 8px;
     max-width: 135px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
   }
 }
 
