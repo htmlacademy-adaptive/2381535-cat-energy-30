@@ -33,7 +33,7 @@
 
 .advantages__title {
   color: $color-black;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -129,7 +129,7 @@
       content: counter(num);
       counter-increment: num;
       position: absolute;
-      font-family: "Oswald", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-size: 280px;
       line-height: 280px;
       top: 0;
