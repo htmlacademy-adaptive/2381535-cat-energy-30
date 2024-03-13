@@ -6,6 +6,26 @@
   text-align: center;
   align-self: center;
   margin-top: -10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -71px;
+    margin-bottom: 22px;
+    height: 210px;
+    width: 200px;
+    position: relative;
+    text-align: unset;
+  }
+}
+
+.card__image {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
 }
 
 .card__title {
@@ -40,6 +60,10 @@
 .card__price {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 1px;
+  }
 }
 
 .card__button {
