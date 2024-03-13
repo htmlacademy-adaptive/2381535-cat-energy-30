@@ -22,7 +22,12 @@
 body {
   font-family: "lato", "Arial", sans-serif;
   margin: 0;
-  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .visually-hidden {
