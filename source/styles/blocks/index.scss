@@ -12,10 +12,10 @@
     &::before {
       position: absolute;
       content: "";
-      background-color: $color-basic-gray;
-      height: 462px;
+      background-color: #f2f2f2;
+      top: 136px;
+      min-height: 462px;
       width: 100%;
-      bottom: -100px;
     }
   }
 
