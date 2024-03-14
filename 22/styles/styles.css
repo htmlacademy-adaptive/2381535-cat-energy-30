@@ -563,6 +563,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex-wrap: wrap;
 }
 @media (min-width: 768px) {
   .diet {
@@ -1166,6 +1167,10 @@ img {
   margin-top: -20px;
   background-color: #666666;
   z-index: 1;
+}
+
+.slider__photo {
+  max-width: unset;
 }
 
 .forms {
