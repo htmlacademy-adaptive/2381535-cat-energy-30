@@ -37,6 +37,14 @@
     margin-inline: 0;
     box-shadow: none;
   }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .navigation__item--current {

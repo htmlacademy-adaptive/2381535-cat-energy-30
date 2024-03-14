@@ -39,6 +39,22 @@
   @media (min-width: $tablet-width) {
     height: 100%;
   }
+
+  &:hover {
+    background-color: $color-green;
+
+    .slider__button {
+      border-color: $color-green;
+
+      &::after {
+        background-color: $color-green;
+      }
+    }
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .slider__button {
@@ -68,13 +84,5 @@
     margin-top: -20px;
     background-color: $color-dark-gray-2;
     z-index: 1;
-  }
-
-  &:hover {
-    border-color: $color-green;
-
-    &::after {
-      background-color: $color-green;
-    }
   }
 }

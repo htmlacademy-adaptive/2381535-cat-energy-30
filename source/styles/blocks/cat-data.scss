@@ -37,6 +37,21 @@
   @media (min-width: $tablet-width) {
     padding: 10px 20px;
   }
+
+  &:hover {
+    border-color: $color-special-gray;
+  }
+
+  &:focus-visible {
+    box-shadow: inset 1px 1px $color-black, inset -1px -1px $color-black;
+    border-color: $color-black;
+    outline: none;
+  }
+
+  &:user-invalid {
+    box-shadow: inset 1px 1px $color-red, inset -1px -1px $color-red;
+    border-color: $color-red;
+  }
 }
 
 .cat-data .form__name {

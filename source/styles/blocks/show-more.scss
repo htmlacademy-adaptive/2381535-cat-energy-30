@@ -69,4 +69,12 @@
   @media (min-width: $tablet-width) {
     margin-top: auto;
   }
+
+  &:hover {
+    background-color: $color-special-gray-4;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
