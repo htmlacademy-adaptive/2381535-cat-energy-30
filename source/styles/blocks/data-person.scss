@@ -13,7 +13,7 @@
   }
 }
 
-.data-person .form__title {
+.data-person__title {
   margin-bottom: 35px;
   width: 187px;
   white-space: wrap;
@@ -30,13 +30,13 @@
   }
 }
 
-.data-person .form__name {
+.data-person__name {
   margin-right: 13px;
   white-space: nowrap;
   align-self: center;
 }
 
-.data-person .form__label {
+.data-person__label {
   width: 100%;
   display: flex;
   justify-content: space-between;
