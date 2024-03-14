@@ -1603,13 +1603,13 @@ img {
   border-color: #ff8282;
 }
 
-.cat-data .form__name {
+.cat-data__name {
   margin-right: 13px;
   white-space: nowrap;
   align-self: center;
 }
 
-.cat-data .form__label {
+.cat-data__label {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -1653,7 +1653,7 @@ img {
   }
 }
 
-.cat-program .form__list {
+.cat-program__list {
   gap: 13px;
 }
 
@@ -1674,13 +1674,13 @@ img {
   }
 }
 
-.data-person .form__title {
+.data-person__title {
   margin-bottom: 35px;
   width: 187px;
   white-space: wrap;
 }
 @media (min-width: 768px) {
-  .data-person .form__title {
+  .data-person__title {
     margin: 0 0 76px;
     white-space: nowrap;
     width: auto;
@@ -1688,18 +1688,18 @@ img {
   }
 }
 @media (min-width: 1280px) {
-  .data-person .form__title {
+  .data-person__title {
     margin-bottom: 76px;
   }
 }
 
-.data-person .form__name {
+.data-person__name {
   margin-right: 13px;
   white-space: nowrap;
   align-self: center;
 }
 
-.data-person .form__label {
+.data-person__label {
   width: 100%;
   display: flex;
   justify-content: space-between;
