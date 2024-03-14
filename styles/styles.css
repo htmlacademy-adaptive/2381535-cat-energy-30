@@ -20,9 +20,14 @@
 }
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 body {
-  font-family: "lato", sans-serif;
+  font-family: "lato", "Arial", sans-serif;
   margin: 0;
-  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .visually-hidden {
@@ -39,11 +44,16 @@ body {
   overflow: hidden;
 }
 
+*:disabled {
+  border: #bababa;
+  opacity: 30%;
+}
+
 /* BLOCKS */
 .button {
   background-color: #68b738;
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -295,6 +305,12 @@ body {
     box-shadow: none;
   }
 }
+.navigation__item:hover {
+  opacity: 60%;
+}
+.navigation__item:active {
+  opacity: 30%;
+}
 
 @media (min-width: 768px) {
   .navigation__item--current {
@@ -322,7 +338,7 @@ body {
 }
 
 .navigation__link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
@@ -376,7 +392,7 @@ body {
 }
 
 .promo {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -402,7 +418,7 @@ body {
 }
 
 .promo__wrapper {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -547,6 +563,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  flex-wrap: wrap;
 }
 @media (min-width: 768px) {
   .diet {
@@ -633,7 +650,7 @@ body {
 }
 
 .diet__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -671,7 +688,7 @@ body {
 
 .diet__link {
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-size: 16px;
   line-height: 16px;
@@ -750,7 +767,7 @@ body {
 
 .advantages__title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -845,7 +862,7 @@ body {
     content: counter(num);
     counter-increment: num;
     position: absolute;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;
     line-height: 280px;
     top: 0;
@@ -890,7 +907,7 @@ body {
 }
 
 .living-example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-size: 36px;
   line-height: 40px;
@@ -1002,7 +1019,7 @@ body {
 
 .example-time__value {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -1027,7 +1044,7 @@ body {
 }
 
 .example-price {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -1107,6 +1124,18 @@ body {
     height: 100%;
   }
 }
+.slider__stick:hover {
+  background-color: #68b738;
+}
+.slider__stick:hover .slider__button {
+  border-color: #68b738;
+}
+.slider__stick:hover .slider__button::after {
+  background-color: #68b738;
+}
+.slider__stick:active {
+  opacity: 60%;
+}
 
 .slider__button {
   position: absolute;
@@ -1139,11 +1168,9 @@ body {
   background-color: #666666;
   z-index: 1;
 }
-.slider__button:hover {
-  border-color: #68b738;
-}
-.slider__button:hover::after {
-  background-color: #68b738;
+
+.slider__photo {
+  max-width: unset;
 }
 
 .forms {
@@ -1180,7 +1207,7 @@ body {
 }
 
 .forms__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-size: 36px;
   line-height: 36px;
@@ -1201,7 +1228,7 @@ body {
 }
 
 .forms__text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-size: 14px;
   line-height: 18px;
@@ -1412,6 +1439,9 @@ body {
     margin-right: 20px;
   }
 }
+.form__input[type=radio]:hover, .form__input[type=checkbox]:hover {
+  border-color: #bababa;
+}
 .form__input[type=radio] {
   border-radius: 50%;
 }
@@ -1560,6 +1590,18 @@ body {
     padding: 10px 20px;
   }
 }
+.cat-data input:hover {
+  border-color: #cdcdcd;
+}
+.cat-data input:focus-visible {
+  box-shadow: inset 1px 1px #000000, inset -1px -1px #000000;
+  border-color: #000000;
+  outline: none;
+}
+.cat-data input:user-invalid {
+  box-shadow: inset 1px 1px #ff8282, inset -1px -1px #ff8282;
+  border-color: #ff8282;
+}
 
 .cat-data .form__name {
   margin-right: 13px;
@@ -1678,6 +1720,18 @@ body {
     padding: 10px 40px 10px 20px;
   }
 }
+.data-person input:hover {
+  border-color: #cdcdcd;
+}
+.data-person input:focus-visible {
+  box-shadow: inset 1px 1px #000000, inset -1px -1px #000000;
+  border-color: #000000;
+  outline: none;
+}
+.data-person input:user-invalid {
+  box-shadow: inset 1px 1px #ff8282, inset -1px -1px #ff8282;
+  border-color: #ff8282;
+}
 
 .data-person__list {
   display: flex;
@@ -1711,7 +1765,7 @@ body {
 }
 
 .form-comment__textarea {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #444444;
   border: 1px solid #e7e7e7;
   font-size: 16px;
@@ -1785,7 +1839,7 @@ body {
 }
 
 .catalog__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-weight: 400;
   font-size: 36px;
@@ -1918,7 +1972,7 @@ body {
 }
 
 .card__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #222222;
   font-weight: 400;
   font-size: 16px;
@@ -2036,7 +2090,7 @@ body {
 }
 
 .show-more__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #111111;
   font-size: 16px;
   line-height: 20px;
@@ -2074,7 +2128,7 @@ body {
 }
 
 .show-more__button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #444444;
   background-color: #f2f2f2;
   font-size: 16px;
@@ -2088,6 +2142,12 @@ body {
   .show-more__button {
     margin-top: auto;
   }
+}
+.show-more__button:hover {
+  background-color: #ebebeb;
+}
+.show-more__button:active {
+  opacity: 60%;
 }
 
 .extra {
@@ -2122,7 +2182,7 @@ body {
 }
 
 .extra__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-size: 24px;
   line-height: 24px;
@@ -2241,7 +2301,7 @@ body {
 }
 
 .extra__name {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #222222;
   font-size: 16px;
   line-height: 16px;
@@ -2479,13 +2539,13 @@ body {
     width: 565px;
     padding: 60px 80px;
     background-color: #ffffff;
-    margin: 95px auto auto 110px;
+    margin: 95px auto auto 0;
     box-sizing: border-box;
   }
 }
 
 .contacts__text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-size: 16px;
   line-height: 20px;
