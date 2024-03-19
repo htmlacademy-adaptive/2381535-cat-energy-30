@@ -130,20 +130,6 @@
   }
 }
 
-.main-header__navigation--wrapper::before {
-  @media (min-width: $desktop-width) {
-    width: 720px;
-    height: 694px;
-    top: -69px;
-    position: absolute;
-    content: "";
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-color: $color-green;
-    z-index: -1;
-  }
-}
-
 .main-header__navigation--opened {
   display: block;
   position: absolute;

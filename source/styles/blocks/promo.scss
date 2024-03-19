@@ -39,13 +39,17 @@
   min-height: 302px;
   padding-inline: 20px;
   margin-bottom: 138px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-mobile@1x.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-mobile@1x.webp");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   box-sizing: border-box;
   padding-top: 27px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background-mobile@2x.webp");
+  }
 
   @media (max-width: $mobile-only) {
     margin-inline: -20px;
