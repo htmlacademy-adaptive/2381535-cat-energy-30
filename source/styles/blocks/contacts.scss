@@ -19,6 +19,10 @@
     background-color: $color-white;
     margin: 95px auto auto 0;
     box-sizing: border-box;
+
+    @media (scripting: enabled) {
+      display: none;
+    }
   }
 }
 
@@ -71,12 +75,6 @@
   }
 }
 
-.contacts__map {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-}
-
 .contacts__wrapper--background {
   background-color: $color-basic-gray;
   box-shadow: 100px 0 $color-basic-gray, -100px 0 $color-basic-gray;
@@ -84,5 +82,28 @@
   @media (min-width: $desktop-width) {
     background-color: $color-white;
     box-shadow: none;
+  }
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+
+  @media (scripting: enabled) {
+    display: none;
+  }
+}
+
+.contacts__iframe {
+  width: 100vw;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+
+  @media (scripting: none) {
+    display: none;
   }
 }
