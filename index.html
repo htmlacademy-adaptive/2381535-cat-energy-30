@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>CAT ENERGY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/lato/400.woff2" as="font" crossorigin="anonymous" type="font/woff2">
+  <link rel="preload" href="fonts/oswald/400.woff2" as="font" crossorigin="anonymous" type="font/woff2">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
@@ -63,6 +65,9 @@
         </div>
         <div class="promo__image">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="images/promo-desktop@1x.webp 1x, images/promo-desktop@2x.webp 2x" width="552" height="499">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/promo-tablet@1x.webp 1x, images/promo-tablet@2x.webp 2x" width="709" height="609">
+            <source type="image/webp" srcset="images/promo-mobile@1x.webp 1x, images/promo-mobile@2x.webp 2x" width="280" height="270">
             <source type="image/png" media="(min-width: 1280px)" srcset="images/promo-desktop@1x.png 1x, images/promo-desktop@2x.png 2x" width="552" height="499">
             <source type="image/png" media="(min-width: 768px)" srcset="images/promo-tablet@1x.png 1x, images/promo-tablet@2x.png 2x" width="709" height="609">
             <img src="images/promo-mobile@1x.png" srcset="images/promo-mobile@2x.png 2x" width="280" height="270" alt="Питание для котов">
@@ -130,6 +135,8 @@
             <div class="slider">
               <div class="slider__left">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/slider-before-tablet@1x.webp 1x, images/slider-before-tablet@2x.webp 2x" width="560" height="512">
+                  <source type="image/webp" srcset="images/slider-before-mobile@1x.webp 1x, images/slider-before-mobile@2x.webp 2x" width="280" height="256">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/slider-before-tablet@1x.png 1x, images/slider-before-tablet@2x.png 2x" width="560" height="512">
                   <img class="slider__photo" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
                 </picture>
@@ -141,6 +148,8 @@
               </div>
               <div class="slider__right">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/slider-after-tablet@1x.webp 1x, images/slider-after-tablet@2x.webp 2x" width="560" height="512">
+                  <source type="image/webp" srcset="images/slider-after-mobile@1x.webp 1x, images/slider-after-mobile@2x.webp 2x" width="280" height="256">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/slider-after-tablet@1x.png 1x, images/slider-after-tablet@2x.png 2x" width="560" height="512">
                   <img class="slider__photo" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
                 </picture>
@@ -167,10 +176,14 @@
         </div>
       </div>
       <picture>
+        <source type="image/webp" media="(min-width: 1200px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="400">
+        <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="400">
+        <source type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x" width="320" height="362">
         <source type="image/jpg" media="(min-width: 1280px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x" width="1440" height="400">
         <source type="image/jpg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x" width="768" height="400">
         <img class="contacts__map" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта проезда">
       </picture>
+      <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197436!2d30.32047247614114!3d59.938719162094806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1710886955513!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!-- footer navigation -->
     <div class="footer__wrapper">
