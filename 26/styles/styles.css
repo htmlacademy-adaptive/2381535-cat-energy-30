@@ -2572,11 +2572,6 @@ img {
     box-sizing: border-box;
   }
 }
-@media (min-width: 1280px) and (scripting: enabled) {
-  .contacts__wrapper {
-    display: none;
-  }
-}
 
 .contacts__text {
   font-family: "Oswald", "Arial", sans-serif;
@@ -2645,6 +2640,8 @@ img {
 .contacts__map {
   display: block;
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   object-fit: cover;
 }
 @media (scripting: enabled) {
