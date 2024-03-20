@@ -3,13 +3,13 @@ import { readFileSync, rmSync } from 'node:fs';
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import { nunjucksCompile } from 'gulp-nunjucks';
-// import htmlmin from 'gulp-htmlmin';
+import htmlmin from 'gulp-htmlmin';
 import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import postUrl from 'postcss-url';
 import autoprefixer from 'autoprefixer';
-// import csso from 'postcss-csso';
+import csso from 'postcss-csso';
 import { createGulpEsbuild } from 'gulp-esbuild';
 import browserslistToEsbuild from 'browserslist-to-esbuild';
 import sharp from 'gulp-sharp-responsive';
@@ -46,7 +46,7 @@ const data = {
 export function processMarkup () {
   return src(`${PATH_TO_SOURCE}**/*.html`)
     .pipe(nunjucksCompile(data))
-    // .pipe(htmlmin({ collapseWhitespace: !isDevelopment }))
+    .pipe(htmlmin({ collapseWhitespace: !isDevelopment }))
     .pipe(dest(PATH_TO_DIST))
     .pipe(server.stream());
 }
@@ -63,7 +63,7 @@ export function processStyles () {
     .pipe(postcss([
       postUrl({ assetsPath: '../' }),
       autoprefixer(),
-      // csso()
+      csso()
     ]))
     .pipe(dest(`${PATH_TO_DIST}styles`, { sourcemaps: isDevelopment }))
     .pipe(server.stream());

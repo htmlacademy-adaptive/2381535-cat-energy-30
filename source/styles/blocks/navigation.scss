@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: end;
+    justify-content: flex-end;
     background-color: transparent;
     width: 702px;
     flex-wrap: wrap;

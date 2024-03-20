@@ -5,7 +5,12 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-areas: "cat-data cat-program" "data-person data-person" "form-comment form-comment" "form-extra form-extra" "form__button-wrapper form__button-wrapper";
+    grid-template-areas:
+      "cat-data             cat-program"
+      "data-person          data-person"
+      "form-comment         form-comment"
+      "form-extra           form-extra"
+      "form__button-wrapper form__button-wrapper";
     gap: 0 80px;
     grid-template-columns: 570px 570px;
   }
