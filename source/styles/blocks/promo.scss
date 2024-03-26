@@ -113,6 +113,7 @@
   bottom: 38px;
   translate: 50%;
   right: 50%;
+  width: max-content;
 
   @media (min-width: $tablet-width) {
     position: relative;

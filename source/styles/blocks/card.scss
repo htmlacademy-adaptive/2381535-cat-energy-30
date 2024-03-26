@@ -48,6 +48,7 @@
   margin: 0 0 15px;
   cursor: pointer;
   text-decoration: none;
+  display: block;
 
   &:hover {
     opacity: 0.7;
@@ -138,6 +139,11 @@
       background-color: $color-special-gray;
       bottom: -5px;
       left: 0;
+
+      /* stylelint-disable-next-line max-nesting-depth */
+      @media (min-width: $desktop-width) {
+        bottom: -8px;
+      }
     }
   }
 }

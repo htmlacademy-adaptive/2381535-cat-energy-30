@@ -12,10 +12,14 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 148px 37px 40px;
+    padding: 158px 37px 40px;
     border: 2px solid $color-basic-gray;
     background-size: 60px 60px;
     background-position: center 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 148px;
   }
 }
 
