@@ -11,6 +11,7 @@
   @media (min-width: $desktop-width) {
     background-color: transparent;
     margin-top: 55px;
+    align-items: start;
   }
 }
 
@@ -32,7 +33,6 @@
   @media (min-width: $desktop-width) {
     background-color: transparent;
     z-index: 2;
-    max-width: 700px;
   }
 }
 

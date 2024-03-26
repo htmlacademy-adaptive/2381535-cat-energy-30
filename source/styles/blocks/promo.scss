@@ -2,17 +2,15 @@
   font-family: "Oswald", "Arial", sans-serif;
   display: flex;
   flex-direction: column;
-  position: relative;
 
   @media (min-width: $desktop-width) {
     min-height: 662px;
     margin-inline: auto;
-    position: relative;
 
     &::before {
       content: "";
       position: absolute;
-      top: -115px;
+      top: 0;
       height: 694px;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop.jpg");
       background-color: #424146;
