@@ -163,6 +163,11 @@
     appearance: textfield;
   }
 
+  &[type="number"]::-webkit-outer-spin-button,
+  &[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
   &[type="radio"],
   &[type="checkbox"] {
     appearance: none;
